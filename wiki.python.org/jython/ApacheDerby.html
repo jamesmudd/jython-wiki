@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>ApacheDerby - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: ApacheDerby" href="https://wiki.python.org/jython/ApacheDerby?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=ApacheDerby&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/ApacheDerby?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/ApacheDerby?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="ApacheDerby.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/ApacheDerby?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="ApacheDerby.html">ApacheDerby</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="ApacheDerby.html">ApacheDerby</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="ApacheDerby.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/ApacheDerby?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/ApacheDerby?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="ApacheDerby.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867">
+<h1 id="Apache_Derby_Example.28s.29">Apache Derby Example(s)</h1>
+<span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line867"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="ApacheDerby.html#Apache_Derby_Example.28s.29">Apache Derby Example(s)</a></li></ol></div> <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><p class="line862">back to <a href="https://wiki.python.org/jython/OtherExamples">OtherExamples</a> <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line874">-- <span class="anchor" id="line-12"></span>Posted on the Jython-users mailing list by Alfonso Reyes, September 2007 <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line874">This Derby example doesn't need the use of zxJDBC. I was looking to complete the exercises in the book &quot;Python programming with Java libraries&quot; but couldn't find anywhere a site to download InstantDB. Trying Apache Derby was quite a pleasant experience. I am attaching files here. <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><p class="line867"><a href="https://wiki.python.org/jython/RSMD.py">RSMD.py</a> is a database utility I found in IBM. <br>
+ <span class="anchor" id="line-17"></span><a href="https://wiki.python.org/jython/SimpleApp">SimpleApp</a>.java the original Java demo  <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><p class="line862">If you follow the instructions in this tutorial everything will go smooth. <a class="http" href="http://db.apache.org/derby/papers/DerbyTut/install_software.html">Derby Tutorial</a>. (note: there is also a lot of info on their wiki) <span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><p class="line867"><span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span><span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span><span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span><span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span><span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span><span class="anchor" id="line-157"></span><span class="anchor" id="line-1-1"></span><div class="highlight python"><div class="codearea" dir="ltr" lang="en">
+<script type="text/javascript">
+function isnumbered(obj) {
+  return obj.childNodes.length && obj.firstChild.childNodes.length && obj.firstChild.firstChild.className == 'LineNumber';
+}
+function nformat(num,chrs,add) {
+  var nlen = Math.max(0,chrs-(''+num).length), res = '';
+  while (nlen>0) { res += ' '; nlen-- }
+  return res+num+add;
+}
+function addnumber(did, nstart, nstep) {
+  var c = document.getElementById(did), l = c.firstChild, n = 1;
+  if (!isnumbered(c)) {
+    if (typeof nstart == 'undefined') nstart = 1;
+    if (typeof nstep  == 'undefined') nstep = 1;
+    var n = nstart;
+    while (l != null) {
+      if (l.tagName == 'SPAN') {
+        var s = document.createElement('SPAN');
+        var a = document.createElement('A');
+        s.className = 'LineNumber';
+        a.appendChild(document.createTextNode(nformat(n,4,'')));
+        a.href = '#' + did + '_' + n;
+        s.appendChild(a);
+        s.appendChild(document.createTextNode(' '));
+        n += nstep;
+        if (l.childNodes.length) {
+          l.insertBefore(s, l.firstChild);
+        }
+        else {
+          l.appendChild(s);
+        }
+      }
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function remnumber(did) {
+  var c = document.getElementById(did), l = c.firstChild;
+  if (isnumbered(c)) {
+    while (l != null) {
+      if (l.tagName == 'SPAN' && l.firstChild.className == 'LineNumber') l.removeChild(l.firstChild);
+      l = l.nextSibling;
+    }
+  }
+  return false;
+}
+function togglenumber(did, nstart, nstep) {
+  var c = document.getElementById(did);
+  if (isnumbered(c)) {
+    remnumber(did);
+  } else {
+    addnumber(did,nstart,nstep);
+  }
+  return false;
+}
+</script>
+
+<script type="text/javascript">
+document.write('<a href="ApacheDerby.html#" onclick="return togglenumber(\'CA-61cc278e2be2ff2c5571749f84e987778263abec\', 1, 1);" \
+                class="codenumbers">Toggle line numbers<\/a>');
+</script>
+<pre dir="ltr" id="CA-61cc278e2be2ff2c5571749f84e987778263abec" lang="en"><span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_1">   1</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_1"></span><span class="anchor" id="line-1-2"></span><span class="String">&quot;&quot;&quot; Derby Class SimpleApp.py</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_2">   2</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_2"></span><span class="anchor" id="line-2-1"></span><span class="String">    Add derby.jar to your CLASSPATH</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_3">   3</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_3"></span><span class="anchor" id="line-3-1"></span><span class="String">    Ported by: Alfonso Reyes, September 2007</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_4">   4</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_4"></span><span class="anchor" id="line-4-1"></span><span class="String"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_5">   5</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_5"></span><span class="anchor" id="line-5-1"></span><span class="String">&quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_6">   6</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_6"></span><span class="anchor" id="line-6-1"></span><span class="ResWord">from</span> <span class="ID">RSMD</span> <span class="ResWord">import</span> <span class="ID">printRSMD</span>, <span class="ID">RSMD</span>    <span class="Comment"># nice methods I downloaded from IBM site</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_7">   7</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_7"></span><span class="anchor" id="line-7-1"></span><span class="ResWord">from</span> <span class="ID">java.sql</span> <span class="ResWord">import</span> <span class="ID">Connection</span>, <span class="ID">DriverManager</span>, <span class="ID">ResultSet</span>, <span class="ID">SQLException</span>, <span class="ID">Statement</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_8">   8</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_8"></span><span class="anchor" id="line-8-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_9">   9</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_9"></span><span class="anchor" id="line-9-1"></span><span class="ResWord">from</span> <span class="ID">java.util</span> <span class="ResWord">import</span> <span class="ID">Properties</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_10">  10</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_10"></span><span class="anchor" id="line-10-1"></span><span class="ResWord">from</span> <span class="ID">java.lang</span> <span class="ResWord">import</span> <span class="ID">Class</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_11">  11</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_11"></span><span class="anchor" id="line-11-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_12">  12</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_12"></span><span class="anchor" id="line-12-1"></span><span class="ResWord">class</span> <span class="ID">SimpleApp</span>:</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_13">  13</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_13"></span><span class="anchor" id="line-13-1"></span>    <span class="ResWord">def</span> <span class="ID">__init__</span>(<span class="ResWord">self</span>):</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_14">  14</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_14"></span><span class="anchor" id="line-14-1"></span>        <span class="Comment"># the default framework is embedded</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_15">  15</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_15"></span><span class="anchor" id="line-15-1"></span>        <span class="ResWord">self</span>.<span class="ID">framework</span> = <span class="String">&quot;</span><span class="String">embedded</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_16">  16</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_16"></span><span class="anchor" id="line-16-1"></span>        <span class="ResWord">self</span>.<span class="ID">driver</span> = <span class="String">&quot;</span><span class="String">org.apache.derby.jdbc.EmbeddedDriver</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_17">  17</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_17"></span><span class="anchor" id="line-17-1"></span>        <span class="ResWord">self</span>.<span class="ID">protocol</span> = <span class="String">&quot;</span><span class="String">jdbc:derby:</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_18">  18</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_18"></span><span class="anchor" id="line-18-1"></span>        <span class="ResWord">self</span>.<span class="ID">username</span> = <span class="String">&quot;</span><span class="String">user1</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_19">  19</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_19"></span><span class="anchor" id="line-19-1"></span>        <span class="ResWord">self</span>.<span class="ID">password</span> = <span class="String">&quot;</span><span class="String">user1</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_20">  20</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_20"></span><span class="anchor" id="line-20-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_21">  21</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_21"></span><span class="anchor" id="line-21-1"></span>    <span class="ResWord">def</span> <span class="ID">go</span>(<span class="ResWord">self</span>):</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_22">  22</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_22"></span><span class="anchor" id="line-22-1"></span>        <span class="Comment"># parse the arguments to determine which framework is desired</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_23">  23</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_23"></span><span class="anchor" id="line-23-1"></span>        <span class="Comment">#parseArguments(args)</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_24">  24</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_24"></span><span class="anchor" id="line-24-1"></span>        <span class="String">&quot;&quot;&quot;   The driver is installed by loading its class.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_25">  25</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_25"></span><span class="anchor" id="line-25-1"></span><span class="String">        In an embedded environment, this will start up Derby, since it is not already running.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_26">  26</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_26"></span><span class="anchor" id="line-26-1"></span><span class="String"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_27">  27</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_27"></span><span class="anchor" id="line-27-1"></span><span class="String">        &quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_28">  28</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_28"></span><span class="anchor" id="line-28-1"></span>        <span class="ID">ds</span> = <span class="ResWord">None</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_29">  29</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_29"></span><span class="anchor" id="line-29-1"></span>        <span class="ID">conn</span> = <span class="ResWord">None</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_30">  30</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_30"></span><span class="anchor" id="line-30-1"></span>        <span class="ID">props</span> = <span class="ID">Properties</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_31">  31</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_31"></span><span class="anchor" id="line-31-1"></span>        <span class="ID">props</span>.<span class="ID">put</span>(<span class="String">&quot;</span><span class="String">user</span><span class="String">&quot;</span>, <span class="ResWord">self</span>.<span class="ID">username</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_32">  32</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_32"></span><span class="anchor" id="line-32-1"></span>        <span class="ID">props</span>.<span class="ID">put</span>(<span class="String">&quot;</span><span class="String">password</span><span class="String">&quot;</span>, <span class="ResWord">self</span>.<span class="ID">password</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_33">  33</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_33"></span><span class="anchor" id="line-33-1"></span>        <span class="ResWord">print</span> <span class="ID">props</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_34">  34</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_34"></span><span class="anchor" id="line-34-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_35">  35</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_35"></span><span class="anchor" id="line-35-1"></span>        <span class="Comment"># check for J2ME specification - J2ME must use a DataSource further on */</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_36">  36</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_36"></span><span class="anchor" id="line-36-1"></span>        <span class="ID">javaspec</span> = <span class="ID">props</span>.<span class="ID">getProperty</span>( <span class="String">&quot;</span><span class="String">java.specification.name</span><span class="String">&quot;</span> )</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_37">  37</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_37"></span><span class="anchor" id="line-37-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_38">  38</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_38"></span><span class="anchor" id="line-38-1"></span>        <span class="String">&quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_39">  39</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_39"></span><span class="anchor" id="line-39-1"></span><span class="String">           The connection specifies create=true in the url to cause</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_40">  40</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_40"></span><span class="anchor" id="line-40-1"></span><span class="String">           the database to be created. To remove the database,</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_41">  41</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_41"></span><span class="anchor" id="line-41-1"></span><span class="String">           remove the directory derbyDB and its contents.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_42">  42</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_42"></span><span class="anchor" id="line-42-1"></span><span class="String">           The directory derbyDB will be created under</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_43">  43</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_43"></span><span class="anchor" id="line-43-1"></span><span class="String">           the directory that the system property</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_44">  44</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_44"></span><span class="anchor" id="line-44-1"></span><span class="String">           derby.system.home points to, or the current</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_45">  45</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_45"></span><span class="anchor" id="line-45-1"></span><span class="String">           directory if derby.system.home is not set.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_46">  46</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_46"></span><span class="anchor" id="line-46-1"></span><span class="String"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_47">  47</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_47"></span><span class="anchor" id="line-47-1"></span><span class="String">         &quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_48">  48</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_48"></span><span class="anchor" id="line-48-1"></span>        <span class="ID">Class</span>.<span class="ID">forName</span>(<span class="ResWord">self</span>.<span class="ID">driver</span>).<span class="ID">newInstance</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_49">  49</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_49"></span><span class="anchor" id="line-49-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Loaded the appropriate driver.</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_50">  50</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_50"></span><span class="anchor" id="line-50-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_51">  51</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_51"></span><span class="anchor" id="line-51-1"></span>        <span class="ID">database</span> = <span class="String">&quot;</span><span class="String">derbyDB5</span><span class="String">&quot;</span>   <span class="Comment"># put here the name for your database</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_52">  52</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_52"></span><span class="anchor" id="line-52-1"></span>        <span class="ID">dbStr</span> = <span class="ResWord">self</span>.<span class="ID">protocol</span> + <span class="ID">database</span> + <span class="String">&quot;</span><span class="String">;create=true</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_53">  53</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_53"></span><span class="anchor" id="line-53-1"></span>        <span class="ResWord">print</span> <span class="ID">dbStr</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_54">  54</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_54"></span><span class="anchor" id="line-54-1"></span>        <span class="ID">conn</span> = <span class="ID">DriverManager</span>.<span class="ID">getConnection</span>(<span class="ID">dbStr</span>, <span class="ID">props</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_55">  55</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_55"></span><span class="anchor" id="line-55-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Connected to and created database derbyDB</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_56">  56</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_56"></span><span class="anchor" id="line-56-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_57">  57</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_57"></span><span class="anchor" id="line-57-1"></span>        <span class="ID">conn</span>.<span class="ID">setAutoCommit</span>(<span class="ResWord">False</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_58">  58</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_58"></span><span class="anchor" id="line-58-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_59">  59</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_59"></span><span class="anchor" id="line-59-1"></span>        <span class="String">&quot;&quot;&quot;    Creating a statement lets us issue commands against</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_60">  60</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_60"></span><span class="anchor" id="line-60-1"></span><span class="String">        the connection.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_61">  61</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_61"></span><span class="anchor" id="line-61-1"></span><span class="String"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_62">  62</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_62"></span><span class="anchor" id="line-62-1"></span><span class="String">        &quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_63">  63</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_63"></span><span class="anchor" id="line-63-1"></span>        <span class="ID">s</span> = <span class="ID">conn</span>.<span class="ID">createStatement</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_64">  64</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_64"></span><span class="anchor" id="line-64-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_65">  65</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_65"></span><span class="anchor" id="line-65-1"></span>        <span class="Comment">#   We create a table, add a few rows, and update one.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_66">  66</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_66"></span><span class="anchor" id="line-66-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(<span class="String">&quot;</span><span class="String">create table derbyDB(num int, addr varchar(40))</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_67">  67</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_67"></span><span class="anchor" id="line-67-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Created table derbyDB</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_68">  68</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_68"></span><span class="anchor" id="line-68-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(<span class="String">&quot;</span><span class="String">insert into derbyDB values (1956,</span><span class="String">'</span><span class="String">Webster St.</span><span class="String">'</span><span class="String">)</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_69">  69</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_69"></span><span class="anchor" id="line-69-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Inserted 1956 Webster</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_70">  70</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_70"></span><span class="anchor" id="line-70-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(<span class="String">&quot;</span><span class="String">insert into derbyDB values (1910,</span><span class="String">'</span><span class="String">Union St.</span><span class="String">'</span><span class="String">)</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_71">  71</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_71"></span><span class="anchor" id="line-71-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Inserted 1910 Union</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_72">  72</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_72"></span><span class="anchor" id="line-72-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(<span class="String">&quot;</span><span class="String">insert into derbyDB values (1,</span><span class="String">'</span><span class="String">Wandering Oak</span><span class="String">'</span><span class="String">)</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_73">  73</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_73"></span><span class="anchor" id="line-73-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Inserted 1 Wandering Oak</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_74">  74</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_74"></span><span class="anchor" id="line-74-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_75">  75</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_75"></span><span class="anchor" id="line-75-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_76">  76</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_76"></span><span class="anchor" id="line-76-1"></span>            <span class="String">&quot;</span><span class="String">update derbyDB set num=180, addr=</span><span class="String">'</span><span class="String">Grand Ave.</span><span class="String">'</span><span class="String"> where num=1956</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_77">  77</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_77"></span><span class="anchor" id="line-77-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Updated 1956 Webster to 180 Grand</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_78">  78</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_78"></span><span class="anchor" id="line-78-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_79">  79</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_79"></span><span class="anchor" id="line-79-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_80">  80</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_80"></span><span class="anchor" id="line-80-1"></span>            <span class="String">&quot;</span><span class="String">update derbyDB set num=300, addr=</span><span class="String">'</span><span class="String">Lakeshore Ave.</span><span class="String">'</span><span class="String"> where num=180</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_81">  81</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_81"></span><span class="anchor" id="line-81-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Updated 180 Grand to 300 Lakeshore</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_82">  82</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_82"></span><span class="anchor" id="line-82-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_83">  83</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_83"></span><span class="anchor" id="line-83-1"></span>        <span class="Comment">#  We select the rows and verify the results.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_84">  84</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_84"></span><span class="anchor" id="line-84-1"></span>        <span class="ID">rs</span> = <span class="ID">s</span>.<span class="ID">executeQuery</span>(<span class="String">&quot;</span><span class="String">SELECT num, addr FROM derbyDB ORDER BY num</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_85">  85</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_85"></span><span class="anchor" id="line-85-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_86">  86</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_86"></span><span class="anchor" id="line-86-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Verified the rows</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_87">  87</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_87"></span><span class="anchor" id="line-87-1"></span>        <span class="ID">stmt</span>   = <span class="ID">conn</span>.<span class="ID">createStatement</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_88">  88</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_88"></span><span class="anchor" id="line-88-1"></span>        <span class="ID">Query</span>  = <span class="String">'</span><span class="String">SELECT * FROM derbyDB</span><span class="String">'</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_89">  89</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_89"></span><span class="anchor" id="line-89-1"></span>        <span class="ID">rs</span>     = <span class="ID">stmt</span>.<span class="ID">executeQuery</span>( <span class="ID">Query</span> )</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_90">  90</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_90"></span><span class="anchor" id="line-90-1"></span>        <span class="ID">rsmd</span>   = <span class="ID">RSMD</span>( <span class="ID">rs</span> )</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_91">  91</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_91"></span><span class="anchor" id="line-91-1"></span>        <span class="ID">printRSMD</span>( <span class="ID">rsmd</span>, <span class="ID">Query</span> )</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_92">  92</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_92"></span><span class="anchor" id="line-92-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_93">  93</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_93"></span><span class="anchor" id="line-93-1"></span>        <span class="ID">rowCount</span> = <span class="Number">0</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_94">  94</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_94"></span><span class="anchor" id="line-94-1"></span>        <span class="ResWord">while</span> ( <span class="ID">rs</span>.<span class="ID">next</span>() ) :</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_95">  95</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_95"></span><span class="anchor" id="line-95-1"></span>            <span class="ID">rowCount</span> += <span class="Number">1</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_96">  96</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_96"></span><span class="anchor" id="line-96-1"></span>            <span class="ID">row</span> = ( <span class="ID">rs</span>.<span class="ID">getInt</span>( <span class="Number">1</span> ), <span class="ID">rs</span>.<span class="ID">getString</span>( <span class="Number">2</span> ) )</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_97">  97</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_97"></span><span class="anchor" id="line-97-1"></span>            <span class="ResWord">print</span> <span class="ID">row</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_98">  98</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_98"></span><span class="anchor" id="line-98-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_99">  99</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_99"></span><span class="anchor" id="line-99-1"></span>        <span class="ID">stmt</span>.<span class="ID">close</span>()        <span class="Comment"># close stmt connection</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_100"> 100</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_100"></span><span class="anchor" id="line-100-1"></span>        <span class="ID">s</span>.<span class="ID">execute</span>(<span class="String">&quot;</span><span class="String">drop table derbyDB</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_101"> 101</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_101"></span><span class="anchor" id="line-101-1"></span>        <span class="ResWord">print</span><span class="String">&quot;</span><span class="String">Dropped table derbyDB</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_102"> 102</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_102"></span><span class="anchor" id="line-102-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_103"> 103</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_103"></span><span class="anchor" id="line-103-1"></span>        <span class="Comment"># We release the result and statement resources.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_104"> 104</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_104"></span><span class="anchor" id="line-104-1"></span>        <span class="ID">rs</span>.<span class="ID">close</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_105"> 105</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_105"></span><span class="anchor" id="line-105-1"></span>        <span class="ID">s</span>.<span class="ID">close</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_106"> 106</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_106"></span><span class="anchor" id="line-106-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Closed result set and statements</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_107"> 107</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_107"></span><span class="anchor" id="line-107-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_108"> 108</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_108"></span><span class="anchor" id="line-108-1"></span>        <span class="Comment">#  We end the transaction and the connection.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_109"> 109</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_109"></span><span class="anchor" id="line-109-1"></span>        <span class="ID">conn</span>.<span class="ID">commit</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_110"> 110</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_110"></span><span class="anchor" id="line-110-1"></span>        <span class="ID">conn</span>.<span class="ID">close</span>()</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_111"> 111</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_111"></span><span class="anchor" id="line-111-1"></span>        <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Committed transaction and closed connection</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_112"> 112</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_112"></span><span class="anchor" id="line-112-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_113"> 113</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_113"></span><span class="anchor" id="line-113-1"></span>        <span class="String">&quot;&quot;&quot;   In embedded mode, an application should shut down Derby.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_114"> 114</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_114"></span><span class="anchor" id="line-114-1"></span><span class="String">           If the application fails to shut down Derby explicitly,</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_115"> 115</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_115"></span><span class="anchor" id="line-115-1"></span><span class="String">           the Derby does not perform a checkpoint when the JVM shuts down, which means</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_116"> 116</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_116"></span><span class="anchor" id="line-116-1"></span><span class="String">           that the next connection will be slower.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_117"> 117</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_117"></span><span class="anchor" id="line-117-1"></span><span class="String">           Explicitly shutting down Derby with the URL is preferred.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_118"> 118</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_118"></span><span class="anchor" id="line-118-1"></span><span class="String">           This style of shutdown will always throw an &quot;exception&quot;.</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_119"> 119</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_119"></span><span class="anchor" id="line-119-1"></span><span class="String"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_120"> 120</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_120"></span><span class="anchor" id="line-120-1"></span><span class="String">        &quot;&quot;&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_121"> 121</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_121"></span><span class="anchor" id="line-121-1"></span>        <span class="ID">gotSQLExc</span> = <span class="ResWord">False</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_122"> 122</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_122"></span><span class="anchor" id="line-122-1"></span>        <span class="ResWord">try</span>:</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_123"> 123</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_123"></span><span class="anchor" id="line-123-1"></span>            <span class="ID">DriverManager</span>.<span class="ID">getConnection</span>(<span class="String">&quot;</span><span class="String">jdbc:derby:;shutdown=true</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_124"> 124</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_124"></span><span class="anchor" id="line-124-1"></span>        <span class="ResWord">except</span> <span class="ID">SQLException</span>:</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_125"> 125</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_125"></span><span class="anchor" id="line-125-1"></span>            <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Catching exceptions</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_126"> 126</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_126"></span><span class="anchor" id="line-126-1"></span>            <span class="ID">gotSQLExc</span> = <span class="ResWord">True</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_127"> 127</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_127"></span><span class="anchor" id="line-127-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_128"> 128</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_128"></span><span class="anchor" id="line-128-1"></span>        <span class="ResWord">if</span> (<span class="ResWord">not</span> <span class="ID">gotSQLExc</span>):</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_129"> 129</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_129"></span><span class="anchor" id="line-129-1"></span>            <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Database did not shut down normally</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_130"> 130</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_130"></span><span class="anchor" id="line-130-1"></span>        <span class="ResWord">else</span>:</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_131"> 131</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_131"></span><span class="anchor" id="line-131-1"></span>            <span class="ResWord">print</span> <span class="String">&quot;</span><span class="String">Database shut down normally</span><span class="String">&quot;</span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_132"> 132</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_132"></span><span class="anchor" id="line-132-1"></span>        <span class="ResWord">print</span>(<span class="String">&quot;</span><span class="String">SimpleApp finished</span><span class="String">&quot;</span>)</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_133"> 133</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_133"></span><span class="anchor" id="line-133-1"></span></span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_134"> 134</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_134"></span><span class="anchor" id="line-134-1"></span><span class="ResWord">if</span> <span class="ID">__name__</span> == <span class="String">'</span><span class="String">__main__</span><span class="String">'</span>:</span>
+<span class="line"><span class="LineNumber"><a href="ApacheDerby.html#CA-61cc278e2be2ff2c5571749f84e987778263abec_135"> 135</a> </span><span class="LineAnchor" id="CA-61cc278e2be2ff2c5571749f84e987778263abec_135"></span><span class="anchor" id="line-135-1"></span>    <span class="ID">SimpleApp</span>().<span class="ID">go</span>()</span>
+</pre></div></div><span class="anchor" id="line-158"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">ApacheDerby  (last edited 2008-11-15 09:15:59 by <span title="??? @ localhost[127.0.0.1]">localhost</span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="ApacheDerby.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/ApacheDerby?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/ApacheDerby?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="ApacheDerby.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

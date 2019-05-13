@@ -1,0 +1,483 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>JythonReleaseNotes - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: JythonReleaseNotes" href="https://wiki.python.org/jython/JythonReleaseNotes?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=JythonReleaseNotes&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/JythonReleaseNotes?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/JythonReleaseNotes?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="JythonReleaseNotes.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/JythonReleaseNotes?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="JythonReleaseNotes.html">JythonReleaseNotes</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="JythonReleaseNotes.html">JythonReleaseNotes</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="JythonReleaseNotes.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/JythonReleaseNotes?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/JythonReleaseNotes?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="JythonReleaseNotes.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><p class="line867">
+<h1 id="Jython_2.7.0_Release_Notes">Jython 2.7.0 Release Notes</h1>
+<span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><p class="line867">
+<h1 id="Installing_Jython">Installing Jython</h1>
+<span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><p class="line874">Use the Jython installation jar to install Jython. Three installation modes are provided: <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span><ul><li>GUI <span class="anchor" id="line-11"></span></li><li>Text console <span class="anchor" id="line-12"></span></li><li>Command line, for automated installation <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></li></ul><p class="line862">From <tt class="backtick"></tt>java -jar jython-installer-2.7.0.jar --help<tt class="backtick"></tt>, we can some examples of how to install Jython: <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><p class="line867"><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><pre><span class="anchor" id="line-1"></span>example of a GUI installation:
+<span class="anchor" id="line-2"></span>        java -jar jython-installer.jar
+<span class="anchor" id="line-3"></span>
+<span class="anchor" id="line-4"></span>example of a console installation:
+<span class="anchor" id="line-5"></span>        java -jar jython-installer.jar -c
+<span class="anchor" id="line-6"></span>
+<span class="anchor" id="line-7"></span>example of a silent installation:
+<span class="anchor" id="line-8"></span>        java -jar jython-installer.jar -s -d targetDirectory
+<span class="anchor" id="line-9"></span>
+<span class="anchor" id="line-10"></span>examples of a silent installation with more options:
+<span class="anchor" id="line-11"></span>        java -jar jython-installer.jar -s -d targetDirectory -t minimum -i src
+<span class="anchor" id="line-12"></span>        java -jar jython-installer.jar -s -d targetDirectory -t standard -e demo doc -i src</pre><span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><p class="line874">A standalone Jython jar is also provided for users who intend to embded <span class="anchor" id="line-34"></span>Jython. <span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span><p class="line867">
+<h1 id="Running_Jython">Running Jython</h1>
+<span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><p class="line874">Jython has a new launcher that is written in Python and executed by <span class="anchor" id="line-40"></span>CPython 2.7. For Windows, CPython is bundled into the launcher <span class="anchor" id="line-41"></span>(<tt class="backtick"></tt>bin\jython.exe<tt class="backtick"></tt>) by the <a class="nonexistent" href="https://wiki.python.org/jython/PyInstaller">PyInstaller</a> program. For other systems, <span class="anchor" id="line-42"></span>the installer determines if CPython 2.7 is available, and if so, uses <span class="anchor" id="line-43"></span>CPython 2.7 to launch Jython. <span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><p class="line862">You can always see the command the launcher will use via the <tt class="backtick"></tt>--print<tt class="backtick"></tt> option: <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span><p class="line867"><span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><pre><span class="anchor" id="line-1-1"></span>$ bin/jython --print
+<span class="anchor" id="line-2-1"></span>java -Xmx512m -Xss1024k -classpath /Users/jbaker/jython2.7.0/jython.jar:. -Dpython.home=/Users/jbaker/jython2.7.0 -Dpython.executable=/Users/jbaker/jython2.7.0/bin/jython -Dpython.launcher.uname=darwin -Dpython.launcher.tty=true -Dfile.encoding=UTF-8 org.python.util.jython</pre><span class="anchor" id="line-53"></span><span class="anchor" id="line-54"></span><p class="line874">Often it may make more sense to directly execute Jython in this fashion. <span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span><p class="line874">The following environment variables do not usually have to be set, but <span class="anchor" id="line-57"></span>if they are, they must be set correctly (see <span class="anchor" id="line-58"></span><a class="http" href="http://bugs.jython.org/issue2346">http://bugs.jython.org/issue2346</a>): <span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><ul><li><p class="line891"><tt class="backtick"></tt>JAVA_ENCODING<tt class="backtick"></tt> - Character set encoding, such as UTF-8 <span class="anchor" id="line-61"></span></li><li><p class="line891"><tt class="backtick"></tt>JAVA_MEM<tt class="backtick"></tt> - Java memory (sets via -Xmx) <span class="anchor" id="line-62"></span></li><li><p class="line891"><tt class="backtick"></tt>JAVA_OPTS<tt class="backtick"></tt> - options to pass directly to Java <span class="anchor" id="line-63"></span></li><li><p class="line891"><tt class="backtick"></tt>JAVA_STACK<tt class="backtick"></tt> - Java stack size (sets via -Xss) <span class="anchor" id="line-64"></span></li><li><p class="line891"><tt class="backtick"></tt>JAVA_HOME<tt class="backtick"></tt> - Java installation directory, if set the java command is assumed to be at <tt class="backtick"></tt>$JAVA_HOME/bin/java<tt class="backtick"></tt> <span class="anchor" id="line-65"></span></li><li><p class="line891"><tt class="backtick"></tt>JYTHON_HOME<tt class="backtick"></tt> -  Jython installation directory <span class="anchor" id="line-66"></span></li><li><p class="line891"><tt class="backtick"></tt>JYTHON_OPTS<tt class="backtick"></tt> - default command line arguments <span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span></li></ul><p class="line874">Empty settings are currently assumed to be significant, so use <span class="anchor" id="line-69"></span><tt class="backtick"></tt>unset<tt class="backtick"></tt> to remove if on a Unix-like system; on Windows, you can <span class="anchor" id="line-70"></span>unset an environment variable via <tt class="backtick"></tt>set ENVVAR=<tt class="backtick"></tt>. <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><p class="line867">
+<h1 id="Backwards-breaking_changes">Backwards-breaking changes</h1>
+<span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span><p class="line874">FIXME <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><p class="line867">
+<h1 id="New_features">New features</h1>
+<span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><p class="line874">FIXME <span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><p class="line867">
+<h1 id="NEWS">NEWS</h1>
+<span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><p class="line874">More details can be found in the NEWS file, which is incorporated here: <span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><p class="line867"><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span><span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><span class="anchor" id="line-129"></span><span class="anchor" id="line-130"></span><span class="anchor" id="line-131"></span><span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span><span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span><span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><span class="anchor" id="line-145"></span><span class="anchor" id="line-146"></span><span class="anchor" id="line-147"></span><span class="anchor" id="line-148"></span><span class="anchor" id="line-149"></span><span class="anchor" id="line-150"></span><span class="anchor" id="line-151"></span><span class="anchor" id="line-152"></span><span class="anchor" id="line-153"></span><span class="anchor" id="line-154"></span><span class="anchor" id="line-155"></span><span class="anchor" id="line-156"></span><span class="anchor" id="line-157"></span><span class="anchor" id="line-158"></span><span class="anchor" id="line-159"></span><span class="anchor" id="line-160"></span><span class="anchor" id="line-161"></span><span class="anchor" id="line-162"></span><span class="anchor" id="line-163"></span><span class="anchor" id="line-164"></span><span class="anchor" id="line-165"></span><span class="anchor" id="line-166"></span><span class="anchor" id="line-167"></span><span class="anchor" id="line-168"></span><span class="anchor" id="line-169"></span><span class="anchor" id="line-170"></span><span class="anchor" id="line-171"></span><span class="anchor" id="line-172"></span><span class="anchor" id="line-173"></span><span class="anchor" id="line-174"></span><span class="anchor" id="line-175"></span><span class="anchor" id="line-176"></span><span class="anchor" id="line-177"></span><span class="anchor" id="line-178"></span><span class="anchor" id="line-179"></span><span class="anchor" id="line-180"></span><span class="anchor" id="line-181"></span><span class="anchor" id="line-182"></span><span class="anchor" id="line-183"></span><span class="anchor" id="line-184"></span><span class="anchor" id="line-185"></span><span class="anchor" id="line-186"></span><span class="anchor" id="line-187"></span><span class="anchor" id="line-188"></span><span class="anchor" id="line-189"></span><span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span><span class="anchor" id="line-206"></span><span class="anchor" id="line-207"></span><span class="anchor" id="line-208"></span><span class="anchor" id="line-209"></span><span class="anchor" id="line-210"></span><span class="anchor" id="line-211"></span><span class="anchor" id="line-212"></span><span class="anchor" id="line-213"></span><span class="anchor" id="line-214"></span><span class="anchor" id="line-215"></span><span class="anchor" id="line-216"></span><span class="anchor" id="line-217"></span><span class="anchor" id="line-218"></span><span class="anchor" id="line-219"></span><span class="anchor" id="line-220"></span><span class="anchor" id="line-221"></span><span class="anchor" id="line-222"></span><span class="anchor" id="line-223"></span><span class="anchor" id="line-224"></span><span class="anchor" id="line-225"></span><span class="anchor" id="line-226"></span><span class="anchor" id="line-227"></span><span class="anchor" id="line-228"></span><span class="anchor" id="line-229"></span><span class="anchor" id="line-230"></span><span class="anchor" id="line-231"></span><span class="anchor" id="line-232"></span><span class="anchor" id="line-233"></span><span class="anchor" id="line-234"></span><span class="anchor" id="line-235"></span><span class="anchor" id="line-236"></span><span class="anchor" id="line-237"></span><span class="anchor" id="line-238"></span><span class="anchor" id="line-239"></span><span class="anchor" id="line-240"></span><span class="anchor" id="line-241"></span><span class="anchor" id="line-242"></span><span class="anchor" id="line-243"></span><span class="anchor" id="line-244"></span><span class="anchor" id="line-245"></span><span class="anchor" id="line-246"></span><span class="anchor" id="line-247"></span><span class="anchor" id="line-248"></span><span class="anchor" id="line-249"></span><span class="anchor" id="line-250"></span><span class="anchor" id="line-251"></span><span class="anchor" id="line-252"></span><span class="anchor" id="line-253"></span><span class="anchor" id="line-254"></span><span class="anchor" id="line-255"></span><span class="anchor" id="line-256"></span><span class="anchor" id="line-257"></span><span class="anchor" id="line-258"></span><span class="anchor" id="line-259"></span><span class="anchor" id="line-260"></span><span class="anchor" id="line-261"></span><span class="anchor" id="line-262"></span><span class="anchor" id="line-263"></span><span class="anchor" id="line-264"></span><span class="anchor" id="line-265"></span><span class="anchor" id="line-266"></span><span class="anchor" id="line-267"></span><span class="anchor" id="line-268"></span><span class="anchor" id="line-269"></span><span class="anchor" id="line-270"></span><span class="anchor" id="line-271"></span><span class="anchor" id="line-272"></span><span class="anchor" id="line-273"></span><span class="anchor" id="line-274"></span><span class="anchor" id="line-275"></span><span class="anchor" id="line-276"></span><span class="anchor" id="line-277"></span><span class="anchor" id="line-278"></span><span class="anchor" id="line-279"></span><span class="anchor" id="line-280"></span><span class="anchor" id="line-281"></span><span class="anchor" id="line-282"></span><span class="anchor" id="line-283"></span><span class="anchor" id="line-284"></span><span class="anchor" id="line-285"></span><span class="anchor" id="line-286"></span><span class="anchor" id="line-287"></span><span class="anchor" id="line-288"></span><span class="anchor" id="line-289"></span><span class="anchor" id="line-290"></span><span class="anchor" id="line-291"></span><span class="anchor" id="line-292"></span><span class="anchor" id="line-293"></span><span class="anchor" id="line-294"></span><span class="anchor" id="line-295"></span><span class="anchor" id="line-296"></span><span class="anchor" id="line-297"></span><span class="anchor" id="line-298"></span><span class="anchor" id="line-299"></span><span class="anchor" id="line-300"></span><span class="anchor" id="line-301"></span><span class="anchor" id="line-302"></span><span class="anchor" id="line-303"></span><span class="anchor" id="line-304"></span><span class="anchor" id="line-305"></span><span class="anchor" id="line-306"></span><span class="anchor" id="line-307"></span><span class="anchor" id="line-308"></span><span class="anchor" id="line-309"></span><span class="anchor" id="line-310"></span><span class="anchor" id="line-311"></span><span class="anchor" id="line-312"></span><span class="anchor" id="line-313"></span><span class="anchor" id="line-314"></span><span class="anchor" id="line-315"></span><span class="anchor" id="line-316"></span><span class="anchor" id="line-317"></span><span class="anchor" id="line-318"></span><span class="anchor" id="line-319"></span><span class="anchor" id="line-320"></span><span class="anchor" id="line-321"></span><span class="anchor" id="line-322"></span><span class="anchor" id="line-323"></span><span class="anchor" id="line-324"></span><span class="anchor" id="line-325"></span><span class="anchor" id="line-326"></span><span class="anchor" id="line-327"></span><span class="anchor" id="line-328"></span><span class="anchor" id="line-329"></span><span class="anchor" id="line-330"></span><span class="anchor" id="line-331"></span><span class="anchor" id="line-332"></span><span class="anchor" id="line-333"></span><span class="anchor" id="line-334"></span><span class="anchor" id="line-335"></span><span class="anchor" id="line-336"></span><span class="anchor" id="line-337"></span><span class="anchor" id="line-338"></span><span class="anchor" id="line-339"></span><span class="anchor" id="line-340"></span><span class="anchor" id="line-341"></span><span class="anchor" id="line-342"></span><span class="anchor" id="line-343"></span><span class="anchor" id="line-344"></span><span class="anchor" id="line-345"></span><span class="anchor" id="line-346"></span><span class="anchor" id="line-347"></span><span class="anchor" id="line-348"></span><span class="anchor" id="line-349"></span><span class="anchor" id="line-350"></span><span class="anchor" id="line-351"></span><span class="anchor" id="line-352"></span><span class="anchor" id="line-353"></span><span class="anchor" id="line-354"></span><span class="anchor" id="line-355"></span><span class="anchor" id="line-356"></span><span class="anchor" id="line-357"></span><span class="anchor" id="line-358"></span><span class="anchor" id="line-359"></span><span class="anchor" id="line-360"></span><span class="anchor" id="line-361"></span><span class="anchor" id="line-362"></span><span class="anchor" id="line-363"></span><span class="anchor" id="line-364"></span><span class="anchor" id="line-365"></span><span class="anchor" id="line-366"></span><span class="anchor" id="line-367"></span><span class="anchor" id="line-368"></span><span class="anchor" id="line-369"></span><span class="anchor" id="line-370"></span><pre><span class="anchor" id="line-1-2"></span>For more details, please see https://hg.python.org/jython
+<span class="anchor" id="line-2-2"></span>
+<span class="anchor" id="line-3-1"></span>Jython 2.7rc3
+<span class="anchor" id="line-4-1"></span>  Bugs fixed
+<span class="anchor" id="line-5-1"></span>   - [ 2311, 2319 ] Many compatibility fixes for launcher (bin/jython, bin/jython.exe)
+<span class="anchor" id="line-6-1"></span>   - [ 2332 ] jython -m test.regrtest -e now finds the tests it should
+<span class="anchor" id="line-7-1"></span>   - [ 1572 ] sys-package-mgr console messages silenced by default. Thanks to Emmanuel Jannetti.
+<span class="anchor" id="line-8-1"></span>   - [ 2327 ] Tests in org/python/tests/imp run only with  proper path
+<span class="anchor" id="line-9-1"></span>   - [ 2105 ] Fix inconsistent conversion of PyObject to String in StdoutWrapper
+<span class="anchor" id="line-10-1"></span>   - [ 1795 ] Support both subclassing from Java in a Python class and a Python implementation of __tojava__
+<span class="anchor" id="line-11-1"></span>   - [ 1861 ] Fix threading.Lock to support non-reentrant semantics
+<span class="anchor" id="line-12-1"></span>   - [ 2323 ] Fixes pickling issues in object.__reduce__ and cPickle.{load, loads}
+<span class="anchor" id="line-13"></span>   - [ 1540 ] Fix stack overflow due to how proxies for Java classes resolve super method in Java
+<span class="anchor" id="line-14"></span>   - [ 2325 ] Enable piping input into Jython without getting extraneous prompt output
+<span class="anchor" id="line-15"></span>   - [ 2324 ] Fix index computation for StringBuilder after seek back in cStringIO
+<span class="anchor" id="line-16"></span>   - [ 2171 ] Fixed direct calls to __pow__() on int, long and float with a modulo of None
+<span class="anchor" id="line-17"></span>   - [ 2326 ] Java's weakly consistent iteration of ConcurrentMap is compatible with mutation
+<span class="anchor" id="line-18"></span>   - [ 2322 ] Refreshed several networking modules from CPython 2.7.9 due to CVE-2013-1752
+<span class="anchor" id="line-19"></span>   - [ 1670 ] Added automatic type coercion of decimal.Decimal to java.lang.{Double, Float}
+<span class="anchor" id="line-20"></span>   - Pull in hand coded AST work into code gen in asdl_antlr
+<span class="anchor" id="line-21"></span>   - [ 2307 ] Fixed normalization of paths on Windows
+<span class="anchor" id="line-22"></span>   - Module tempfile now returns temporary directory in proper case (See also CPython issue 14255)
+<span class="anchor" id="line-23"></span>   - Faster extended slice deletion in bytearray.
+<span class="anchor" id="line-24"></span>   - [ 2304 ] Fixed __module__ missing from functions in the time and operator modules
+<span class="anchor" id="line-25"></span>
+<span class="anchor" id="line-26"></span>Jython 2.7rc2
+<span class="anchor" id="line-27"></span>  Bugs fixed
+<span class="anchor" id="line-28"></span>   - [ 2301 ] time.strftime now always returns a bytestring (fixes pip on Japanese locales)
+<span class="anchor" id="line-29"></span>   - [ 2297 ] Updates Jython installer to use jython.exe
+<span class="anchor" id="line-30"></span>   - [ 2298 ] Fix setuptools wheel bundled by ensurepip so it checks for Windows on Jython
+<span class="anchor" id="line-31"></span>   - [ 2300 ] Fix bin/jython.py to not consume subcommand args
+<span class="anchor" id="line-32"></span>  New features
+<span class="anchor" id="line-33"></span>   - Installer installs pip, setuptools by default, but custom builds can de-select.
+<span class="anchor" id="line-34"></span>     Does not change standalone usage. (Runs jython -m ensurepip as last install step.)
+<span class="anchor" id="line-35"></span>   - Makes jython.py be the default launcher (as bin/jython) if CPython 2.7 is available.
+<span class="anchor" id="line-36"></span>  Removed support
+<span class="anchor" id="line-37"></span>   - Installer no longer supports using an alternative JRE when generating Jython launchers.
+<span class="anchor" id="line-38"></span>     Instead just use JAVA_HOME environment variable to select the desired JRE.
+<span class="anchor" id="line-39"></span>     (Removed because of the new native launcher, jython.exe, that is now used on Windows.)
+<span class="anchor" id="line-40"></span>
+<span class="anchor" id="line-41"></span>Jython 2.7rc1
+<span class="anchor" id="line-42"></span>  Bugs fixed
+<span class="anchor" id="line-43"></span>   - [ 1793 ] Fix relative seek in read/write mode via a non-buffered readinto() method 
+<span class="anchor" id="line-44"></span>   - [ 2282 ] Speed up startup with compiled $py.class files included for standalone, full jars
+<span class="anchor" id="line-45"></span>   - [ 1371, 2283, 2296 ] More robustness wrt security managers, python.home, import of non-ascii names
+<span class="anchor" id="line-46"></span>   - [ 2068 ] Use position(long) setter to manually update file channel's position post-write.
+<span class="anchor" id="line-47"></span>   - [ 2288 ] Posix link and symlink support now uses NIO2
+<span class="anchor" id="line-48"></span>   - [ 2120 ] Use Java instead of JNR for os.chmod, os.mkdir when running on Windows
+<span class="anchor" id="line-49"></span>   - [ 2226 ] Matches CPython's re support of what counts as a Unicode whitespace codepoint
+<span class="anchor" id="line-50"></span>   - [ 1725 ] Speed up re matching by not executing SRE_STATE#TRACE in the sre regex engine
+<span class="anchor" id="line-51"></span>   - Exceptions with non-ascii args should not cause an exception when displayed on console
+<span class="anchor" id="line-52"></span>   - [ 2274 ] Remove Jython-specific pythonpath, test_pythonpath; update pwd to support unicode
+<span class="anchor" id="line-53"></span>   - [ 2289 ] Ensure core types are Serializable, specifically PyUnicode
+<span class="anchor" id="line-54"></span>   - [ 2272 ] Generalize adding special slots (__dict__, __weakref__); adds support for Werkzeug
+<span class="anchor" id="line-55"></span>   - [ 2280 ] Avoid deadlock at shutdown with synchronization of PySystemStateCloser, FinalizeTrigger
+<span class="anchor" id="line-56"></span>   - [ 2275 ] Upgrade JLine to support keyboard layouts using AltGr (such as Finnish) on Windows
+<span class="anchor" id="line-57"></span>   - Improve robustness of socket and SSL support, especially error handling
+<span class="anchor" id="line-58"></span>   - time.sleep(0) should always attempt to yield CPU
+<span class="anchor" id="line-59"></span>   - [ 2271 ] Restore __tojava__ to datetime.{date, datetime, time} classes
+<span class="anchor" id="line-60"></span>   - [ 2084, 1729 ] Robust handling of sun.misc.Signal exceptions across various JVM implementations
+<span class="anchor" id="line-61"></span>   - [ 2189 ] Add java_user scheme to support user directory installs
+<span class="anchor" id="line-62"></span>   - Fix Popen._internal_poll so that it does not race with java.lang.Process finalization
+<span class="anchor" id="line-63"></span>   - Fix reflection-based garbage collection traversal for CPython compatible gc semantics
+<span class="anchor" id="line-64"></span>   - [ 1491 ] Windows launcher now uses jython.exe (built with PyInstaller) instead of jython.bat
+<span class="anchor" id="line-65"></span>     This means that pip, nosetests, yolk, and other installed tool scripts finally work on Windows
+<span class="anchor" id="line-66"></span>
+<span class="anchor" id="line-67"></span>  New features
+<span class="anchor" id="line-68"></span>   - Can add a __dict__ slot descriptor to a subclass of Java classes, such as java.util.HashMap
+<span class="anchor" id="line-69"></span>   - Directly execute zip files or dirs with top level __main__.py to support wrapper scripts
+<span class="anchor" id="line-70"></span>     generated by distlib, part of pip
+<span class="anchor" id="line-71"></span>   - Reflection-based traversal is now activated by default as a fallback for ordinary traversal.
+<span class="anchor" id="line-72"></span>     This impacts third-party extenders of PyObject. A warning is emitted that suggests next steps
+<span class="anchor" id="line-73"></span>     on how to avoid this cost.
+<span class="anchor" id="line-74"></span>   - Uses classpath wildcard in jython.py/jython.exe to minimize the launcher command line,
+<span class="anchor" id="line-75"></span>     (main benefit is Jython developers on Windows using dev builds)
+<span class="anchor" id="line-76"></span>   - Adds new Jython launcher written in Python, bin/jython.py, to be run by CPython 2.7
+<span class="anchor" id="line-77"></span>
+<span class="anchor" id="line-78"></span>Jython 2.7b4
+<span class="anchor" id="line-79"></span>  Bugs Fixed
+<span class="anchor" id="line-80"></span>    - [ 2032 ] Fixed typo in compiler/pycodegen.py
+<span class="anchor" id="line-81"></span>    - [ 2190 ] Raise ValueError when unichr() is called with isolated surrogate codepoint
+<span class="anchor" id="line-82"></span>    - [ 1057 ] Finalizer support (__del__) for new style classes
+<span class="anchor" id="line-83"></span>    - [ 2192 ] Server requests were hanging using jython, django and django-jython
+<span class="anchor" id="line-84"></span>    - [ 2204 ] Minimum (core) install will now suport Jython console
+<span class="anchor" id="line-85"></span>    - [ 2184 ] inspect.callargs, including anonymous tuples in function params
+<span class="anchor" id="line-86"></span>    - [ 2100 ] Fix deficiencies in PyUnicode beyond the BMP
+<span class="anchor" id="line-87"></span>    - Fix bug in supporting meta path importers for six
+<span class="anchor" id="line-88"></span>    - [ 2183 ] Rework function attributes support
+<span class="anchor" id="line-89"></span>    - [ 2115 ] Allow bound methods as arg for single method interface param
+<span class="anchor" id="line-90"></span>    - [ 2163 ] Refactor Py, PySystemState to init constants early
+<span class="anchor" id="line-91"></span>    - [ 2217 ] Update serial release to 3 for sys.version_info
+<span class="anchor" id="line-92"></span>    - [ 2090, 1494 ] Behaviour of long in the JSR-223 engine
+<span class="anchor" id="line-93"></span>    - [ 2196 ] Do not emit duplicate entries in building standalone jar
+<span class="anchor" id="line-94"></span>    - [ 1708 ] Ensure regrtest runs in a C locale to avoid failures
+<span class="anchor" id="line-95"></span>    - [ 2037 ] Prevent non-byte values appearing in str()
+<span class="anchor" id="line-96"></span>    - [ 2205 ] Guard via module import lock all entry points from Java into import
+<span class="anchor" id="line-97"></span>    - [ 1631 ] Fully proxy java.util.Map objects as Python dicts
+<span class="anchor" id="line-98"></span>    - [ 2215 ] Fully proxy java.util.List objects as Python lists
+<span class="anchor" id="line-99"></span>    - [ 2242 ] select.select and related socket.connect_ex fixes
+<span class="anchor" id="line-100"></span>    - [ 2241 ] Fully proxy java.util.Set objects as Python sets
+<span class="anchor" id="line-101"></span>    - [ 2239, 1825 ] os.getenv, os.listdir may return unicode instead of bytes
+<span class="anchor" id="line-102"></span>    - [ 2110 ] Update Java Native Runtime jars
+<span class="anchor" id="line-103"></span>    - [ 2236 ] Interactive parser does not accept try ... except E as e: syntax
+<span class="anchor" id="line-104"></span>    - [ 2232 ] Visit class decorators when visiting class def in scopes compilation
+<span class="anchor" id="line-105"></span>    - [ 2247 ] dict.pop should not add additional quoting in KeyError
+<span class="anchor" id="line-106"></span>    - [ 2238 ] os.system now uses a simpler wrapping of ProcessBuilder
+<span class="anchor" id="line-107"></span>    - [ 1561 ] Raises NotImplementedError if abstract method from Java is not implemented
+<span class="anchor" id="line-108"></span>    - [ 2221 ] Implement Popen.pid 
+<span class="anchor" id="line-109"></span>    - [ 2150 ] Fix regrtest to support -x to exclude tests
+<span class="anchor" id="line-110"></span>    - [ 1152612 ] All dict methods for __dict__ except views
+<span class="anchor" id="line-111"></span>    - [ 1762054 ] Add webbrowser module
+<span class="anchor" id="line-112"></span>    - [ 2252 ] Args in sys.argv are now unicode if characters &gt; 127
+<span class="anchor" id="line-113"></span>    - [ 2092 ] Upgrade to JLine2 and add tab completion support
+<span class="anchor" id="line-114"></span>    - [ 2236 ] Interactive parser does not accept try ... except E as e: syntax
+<span class="anchor" id="line-115"></span>    - [ 2237 ] Fully conformant math and cmath support
+<span class="anchor" id="line-116"></span>    - [ 2244 ] More robust testing of math and cmath modules
+<span class="anchor" id="line-117"></span>    - [ 2224 ] id(...) now persists object resurrection and a pattern is provided to solve similar issues
+<span class="anchor" id="line-118"></span>               (i.e. attributes bound to a PyObject via a WeakHashMap) in an analogue way (See JyAttribute.java).
+<span class="anchor" id="line-119"></span>
+<span class="anchor" id="line-120"></span>  New features
+<span class="anchor" id="line-121"></span>    - Full support of Python buffer protocol, along with Java ByteBuffer support
+<span class="anchor" id="line-122"></span>    - Add index to PyUnicode facilitating O(1) access to strings beyond the BMP.
+<span class="anchor" id="line-123"></span>    - java.util.{Map, List, Set} are now treated as subclasses of the
+<span class="anchor" id="line-124"></span>      corresponding Python abstract base classes
+<span class="anchor" id="line-125"></span>    - jythonlib module to simplify usage of Java internals from Python;
+<span class="anchor" id="line-126"></span>      weakref collections now directly use corresponding collections from
+<span class="anchor" id="line-127"></span>      Google Guava and java.util
+<span class="anchor" id="line-128"></span>    - CPython's _json.c was ported to Java to speed up JSON encoding/decoding
+<span class="anchor" id="line-129"></span>    - Upgraded third party libraries
+<span class="anchor" id="line-130"></span>    - Initial support for ensurepip module
+<span class="anchor" id="line-131"></span>    - Callbacks can be registered/unregistered to be notified when
+<span class="anchor" id="line-132"></span>      bytecode is loaded, using jythonlib.bytecodetools
+<span class="anchor" id="line-133"></span>    - Jython now features an optional, but recommended-to-implement traverseproc-mechanism
+<span class="anchor" id="line-134"></span>      like CPython. This enables some new gc-features to optionally emulate CPython-specific
+<span class="anchor" id="line-135"></span>      gc-behavior. See doc in gc.java and Traverseproc.java.
+<span class="anchor" id="line-136"></span>
+<span class="anchor" id="line-137"></span>  Potentially backwards breaking changes, removing silent errors:
+<span class="anchor" id="line-138"></span>
+<span class="anchor" id="line-139"></span>    - remove method on proxied List objects now follows Python
+<span class="anchor" id="line-140"></span>      sematics: a ValueError is raised if the item is not found in the
+<span class="anchor" id="line-141"></span>      java.util.List. In the past, Java semantics were used, with a
+<span class="anchor" id="line-142"></span>      boolean returned indicating if the item was removed or
+<span class="anchor" id="line-143"></span>      not. Given how this interacted with Jython, such remove
+<span class="anchor" id="line-144"></span>      invocations were in the past silent, and perhaps were actually a
+<span class="anchor" id="line-145"></span>      bug.
+<span class="anchor" id="line-146"></span>
+<span class="anchor" id="line-147"></span>    - d[key_not_present], if d implement java.util.Map, no longer
+<span class="anchor" id="line-148"></span>      returns None, but raises KeyError, which means this behavior now
+<span class="anchor" id="line-149"></span>      matches standard dict semantics.
+<span class="anchor" id="line-150"></span>
+<span class="anchor" id="line-151"></span>    - Abstract methods of an inherited class or interface from Java now raise
+<span class="anchor" id="line-152"></span>      NotImplementedError, instead of returning None (in Java, null) or some
+<span class="anchor" id="line-153"></span>      &quot;zero&quot;, if they are not implemented in the extending Python class.
+<span class="anchor" id="line-154"></span>
+<span class="anchor" id="line-155"></span>    - os.getenv, os.listdir, sys.argv now return unicode instead of
+<span class="anchor" id="line-156"></span>      str values if a given value is not ascii, thus allowing such
+<span class="anchor" id="line-157"></span>      values to be passed through to Java, eg
+<span class="anchor" id="line-158"></span>      java.io.File(sys.argv[1]). Earlier such behavior was potentially
+<span class="anchor" id="line-159"></span>      silently failing in Python functions, but passing through to
+<span class="anchor" id="line-160"></span>      Java because of bug 2037. This behavior conforms with Python
+<span class="anchor" id="line-161"></span>      3.x, which uses Unicode.
+<span class="anchor" id="line-162"></span>
+<span class="anchor" id="line-163"></span>Jython 2.7b3
+<span class="anchor" id="line-164"></span>  Bugs Fixed
+<span class="anchor" id="line-165"></span>    - [ 2225 ] Jython+django-jython - no module named site
+<span class="anchor" id="line-166"></span>    - [ 1497 ] ast classes do not have appropiate base classes
+<span class="anchor" id="line-167"></span>    - [ 1980 ] ast.Eq, ast.Gt, ast.GtE, ast.In, ast.Is, ast.IsNot, ast.Lt, ast.LtE, ast.NotEq and ast.NotIn should be subclasses of ast.cmpop
+<span class="anchor" id="line-168"></span>    - [ 1981 ] ast.And and ast.Or should be subclasses of ast.boolop
+<span class="anchor" id="line-169"></span>    - [ 2130 ] Fix max such that any raised ValueError uses the correct error message text
+<span class="anchor" id="line-170"></span>    - [ 2180 ] default encoding is not UTF-8
+<span class="anchor" id="line-171"></span>    - [ 2094, 2147, 2174 ] Fix bugs in select.poll, threadpool group closing, and SSL handshaking
+<span class="anchor" id="line-172"></span>    - [ 2178 ] Update Apache Commons Compression to 1.8.1 for jar-complete builds
+<span class="anchor" id="line-173"></span>    - [ 2176 ] Fix bz2.BZ2File.read so it reads the number of requested bytes
+<span class="anchor" id="line-174"></span>    - [ 2028 ] Implement unicode._formatter_parser and unicode._formatter_parser
+<span class="anchor" id="line-175"></span>    - [ 1747 ] Synchonize runClosers upon shutdown
+<span class="anchor" id="line-176"></span>    - [ 1898 ] Support subprocess termination vs terminate/kill methods
+<span class="anchor" id="line-177"></span>    - [ 2096 ] Fix subprocess construction such that handles are inherited if not set
+<span class="anchor" id="line-178"></span>    - [ 2123 ] Preserve original name of console encoding
+<span class="anchor" id="line-179"></span>    - [ 1728 ] Make PyDictionary#equals() more robust, similar to PyTuple and PyList
+<span class="anchor" id="line-180"></span>    - [ 2040 ] Ensure that bz2 decompression has enough data to decode
+<span class="anchor" id="line-181"></span>    - [ 2146 ] Fix xrange compliance
+<span class="anchor" id="line-182"></span>    - [ 1591 ] Interactive interpreter stuck on '...' loop
+<span class="anchor" id="line-183"></span>    - [ 1982 ] Modify enumerate such that it can it work with arbitrarily long integers
+<span class="anchor" id="line-184"></span>    - [ 2155 ] Enable IP address objects to be used as tuples
+<span class="anchor" id="line-185"></span>    - [ 1991 ] Subclassed itertools classes can now chain, and be iterated by Java code
+<span class="anchor" id="line-186"></span>    - [ 2062 ] os.write accepts objects having the buffer API
+<span class="anchor" id="line-187"></span>    - [ 1949 ] Update collections.deque to 2.7 compliance, and is now threadsafe
+<span class="anchor" id="line-188"></span>    - [ 1066 ] Add CJK codecs, as well as other codecs available in Java but not in Jython directly
+<span class="anchor" id="line-189"></span>    - [ 2112 ] time.strptime now uses _strptime.py
+<span class="anchor" id="line-190"></span>    - [ 2123 ] Use Java codec throughout parser (not sometimes a Python one)
+<span class="anchor" id="line-191"></span>    - [ 2078 ] Fix tuple creation for inet6 addresses, and support for bound inet4 socket local address
+<span class="anchor" id="line-192"></span>    - [ 2088 ] Fix defaultdict so that derived classes __missing__ methods are not ignored
+<span class="anchor" id="line-193"></span>    - [ 2108 ] Cannot set attribute to instances of AST/PythonTree (blocks pyflakes)
+<span class="anchor" id="line-194"></span>    - [ 1982 ] builtin function enumerate() should support an optional 'start' argument
+<span class="anchor" id="line-195"></span>    - [ 1896215 ] findResource(s) for SyspathJavaLoader
+<span class="anchor" id="line-196"></span>    - [ 2140 ] Raise ValueError on args of invalid domain for math.sqrt, math.log
+<span class="anchor" id="line-197"></span>    - [ 2119 ] Updated *Derived.java classes as generated by src/templates/gderived.py.
+<span class="anchor" id="line-198"></span>    - [ 2087 ] Updated defaultdict to use LoadingCache idiom instead of deprecated ComputingMap
+<span class="anchor" id="line-199"></span>    - [ 2133 ] Fix memory leak by doing computed loads only with __getitem__ in defaultdict
+<span class="anchor" id="line-200"></span>    - Full bz2 support
+<span class="anchor" id="line-201"></span>    - Fix the struct module so that struct.Struct class can be derived from.
+<span class="anchor" id="line-202"></span> 
+<span class="anchor" id="line-203"></span>  Work on resource cleanup
+<span class="anchor" id="line-204"></span>
+<span class="anchor" id="line-205"></span>    - RefReaperThread is now a Runnable to avoid ClassLoader resource leaks
+<span class="anchor" id="line-206"></span>    - ShutdownCloser is now a Runnable to avoid subclass audit issues under a SecurityManager
+<span class="anchor" id="line-207"></span>    - Remove shadowing of mutable statics in PySystemState, instead make them instance variables
+<span class="anchor" id="line-208"></span>    - Fix PySystemState such that it supports AutoCloseable, Closeable
+<span class="anchor" id="line-209"></span>
+<span class="anchor" id="line-210"></span>  Potentially backwards breaking changes
+<span class="anchor" id="line-211"></span>
+<span class="anchor" id="line-212"></span>    - Fix ThreadState so that Jython runtime can be unloaded, using Object[1] indirection
+<span class="anchor" id="line-213"></span>    - Use weakkey/weakvalue when caching ThreadState for a given thread, instead of using ThreadLocal
+<span class="anchor" id="line-214"></span>    - recursion_count is now more approximate, because not all entry/exit pairs are tracked
+<span class="anchor" id="line-215"></span>    - By default, site module is imported when using PythonInterpreter
+<span class="anchor" id="line-216"></span>      Use -Dpython.import.site=false (as of RC1) to not import site at all
+<span class="anchor" id="line-217"></span>
+<span class="anchor" id="line-218"></span>  New Features
+<span class="anchor" id="line-219"></span>
+<span class="anchor" id="line-220"></span>    - Added socket reboot work, using Netty 4 to fully support socket, select, and ssl API
+<span class="anchor" id="line-221"></span>
+<span class="anchor" id="line-222"></span>Jython 2.7b2
+<span class="anchor" id="line-223"></span>  Bugs Fixed
+<span class="anchor" id="line-224"></span>    - [ 1753 ] zlib doesn't call end() on compress and decompress
+<span class="anchor" id="line-225"></span>    - [ 1860 ] test failures in test_array.py
+<span class="anchor" id="line-226"></span>    - [ 1862 ] cStringIO does not support arrays as arguments
+<span class="anchor" id="line-227"></span>    - [ 1876 ] PYTHONIOENCODING unsupported, used (among others) by PyDev
+<span class="anchor" id="line-228"></span>    - [ 1926 ] Adjust MutableSet.pop test so we do not need to skip it
+<span class="anchor" id="line-229"></span>    - [ 1964 ] time.strptime() does not support %f in format
+<span class="anchor" id="line-230"></span>    - [ 2005 ] threading.Event object's wait([timeout]) function returns null instead of True/False.
+<span class="anchor" id="line-231"></span>    - [ 2013 ] %x hex formatting takes O(N^2) time.
+<span class="anchor" id="line-232"></span>    - [ 2020 ] str.translate should delete characters in the second arg when table is None
+<span class="anchor" id="line-233"></span>    - [ 2027 ] Discrepancy in bin(-num) output
+<span class="anchor" id="line-234"></span>    - [ 2033 ] test_strptime fails: test_mar1_comes_after_feb29_even_when_omitting_the_year
+<span class="anchor" id="line-235"></span>    - [ 2046 ] sys.stdin.readline() hangs when used interactively (JLine, Windows)
+<span class="anchor" id="line-236"></span>    - [ 2060 ] Thread ident missing
+<span class="anchor" id="line-237"></span>    - [ 2071 ] datetime strftime %f does not work
+<span class="anchor" id="line-238"></span>    - [ 2075 ] Incorrect padding for hex format strings
+<span class="anchor" id="line-239"></span>    - [ 2082 ] Unexpected (Pdb) prompt during regression tests
+<span class="anchor" id="line-240"></span>    - [ 2083 ] os.unlink() can delete directories
+<span class="anchor" id="line-241"></span>    - [ 2089 ] sys.stdout not flushed after sys.exit
+<span class="anchor" id="line-242"></span>  New Features
+<span class="anchor" id="line-243"></span>    - Command line option -E (ignore environment variables)
+<span class="anchor" id="line-244"></span>    - Environment variable PYTHONIOENCODING, and corresponding registry items
+<span class="anchor" id="line-245"></span>  Removed support
+<span class="anchor" id="line-246"></span>    - No longer supports Java 6; the minimum version is now Java 7
+<span class="anchor" id="line-247"></span>
+<span class="anchor" id="line-248"></span>Jython 2.7b1
+<span class="anchor" id="line-249"></span>  Bugs Fixed
+<span class="anchor" id="line-250"></span>    - [ 1716 ] xrange slicing raises NPE.
+<span class="anchor" id="line-251"></span>    - [ 1968 ] Fixes for test_csv.py.
+<span class="anchor" id="line-252"></span>    - [ 1989 ] condition.notify_all() is missing.
+<span class="anchor" id="line-253"></span>    - [ 1994 ] threading.Event doesn't have is_set method fixed.
+<span class="anchor" id="line-254"></span>    - [ 1327 ] ThreadState needs API cleanup work
+<span class="anchor" id="line-255"></span>    - [ 1309 ] Server sockets do not support client options and propagate them to 'accept'ed client sockets.
+<span class="anchor" id="line-256"></span>    - [ 1951 ] Bytecode Interpreter stack optimization for larger arguments
+<span class="anchor" id="line-257"></span>    - [ 1894 ] bytearray does not support '+' or .join()
+<span class="anchor" id="line-258"></span>    - [ 1921 ] compiler module broken in Jython 2.7 
+<span class="anchor" id="line-259"></span>    - [ 1920 ] Backport CO_FUTURE_PRINT_FUNCTION to Lib/compiler/pycodegen.py
+<span class="anchor" id="line-260"></span>    - [ 1914 ] Float formatting broken in many non-English locales in Jython 2.7
+<span class="anchor" id="line-261"></span>    - [ 1909 ] attrgetter does not parse dotted attributes
+<span class="anchor" id="line-262"></span>    - [ 1924 ] Implement operator.methodcaller
+<span class="anchor" id="line-263"></span>    - [ 1934 ] Break itertools.compress into a separate class 
+<span class="anchor" id="line-264"></span>    - [ 1933 ] Break itertools.cycle into a separate class
+<span class="anchor" id="line-265"></span>    - [ 1932 ] Make check for iterability in chain() arguments lazy
+<span class="anchor" id="line-266"></span>    - [ 1931 ] Check that there are exactly 2 filter args
+<span class="anchor" id="line-267"></span>    - [ 1913 ] Support short -W options
+<span class="anchor" id="line-268"></span>    - [ 1897 ] 2.7.0ax only has partial ssl support
+<span class="anchor" id="line-269"></span>    - array_class in jarray module returns the &quot;Array of a type&quot; class
+<span class="anchor" id="line-270"></span>  New Features
+<span class="anchor" id="line-271"></span>    - bytearray complete
+<span class="anchor" id="line-272"></span>    - a buffer API
+<span class="anchor" id="line-273"></span>    - memoryview
+<span class="anchor" id="line-274"></span>    - bz2 module
+<span class="anchor" id="line-275"></span>
+<span class="anchor" id="line-276"></span>Jython 2.7a2
+<span class="anchor" id="line-277"></span>    - [ 1892 ] site-packages is not in sys.path
+<span class="anchor" id="line-278"></span>
+<span class="anchor" id="line-279"></span>Jython 2.7a1
+<span class="anchor" id="line-280"></span>  Bugs Fixed
+<span class="anchor" id="line-281"></span>    - [ 1880 ] Sha 224 library not present in Jython</pre><span class="anchor" id="line-371"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">JythonReleaseNotes  (last edited 2015-05-01 00:34:43 by <span title="JimBaker @ c-24-9-252-60.hsd1.co.comcast.net[24.9.252.60]"><a href="JimBaker.html" title="JimBaker @ c-24-9-252-60.hsd1.co.comcast.net[24.9.252.60]">JimBaker</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="JythonReleaseNotes.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/JythonReleaseNotes?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/JythonReleaseNotes?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="JythonReleaseNotes.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

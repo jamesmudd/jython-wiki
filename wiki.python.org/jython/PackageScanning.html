@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>PackageScanning - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: PackageScanning" href="https://wiki.python.org/jython/PackageScanning?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=PackageScanning&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/PackageScanning?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/PackageScanning?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="PackageScanning.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/PackageScanning?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="PackageScanning.html">PackageScanning</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="PackageScanning.html">PackageScanning</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="PackageScanning.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/PackageScanning?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/PackageScanning?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="PackageScanning.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+<h2 id="What_is_Package_Scanning">What is Package Scanning</h2>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line862">Java's builtin libraries provide no way to determine what packages are available to a running JVM until they've been loaded.  You can ask the JVM to find a class for you with a call to <tt class="backtick">Class.forName</tt>, but there's no equivalent <tt class="backtick">Package.forName</tt>.  To allow code  to import packages directly and have functions like dir work on them, Jython scans all the jar files it can find at startup to build the package and class structure available to the JVM. <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line867">
+<h2 id="How_do_I_control_which_jars_are_scanned">How do I control which jars are scanned</h2>
+<span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line862">Jython looks at two properties in its registry to try to find jars: <tt class="backtick">python.packages.paths</tt> and <tt class="backtick">python.packages.directories</tt>.  Each of these should be a comma separated list of further registry entries that actually contain the values the scanner will use to build its listing.   <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><p class="line862">First the <tt class="backtick">python.packages.paths</tt> registry entry is processed.  It defaults to <tt class="backtick">java.class.path,sun.boot.class.path</tt>.  That means that the scanner looks up <tt class="backtick">java.class.path</tt> then <tt class="backtick">sun.boot.class.path</tt> in the registry in turn.  Each of these &quot;classpath&quot; entries is treated like something passed to Java's -cp option: it's split on the platform's path separator and each resulting value is scanned for packages if it ends with &quot;.jar&quot; or &quot;.zip&quot;. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line862">Then <tt class="backtick">python.packages.directories</tt> is handled.  It defaults to <tt class="backtick">java.ext.dirs</tt>.  Each second-level registry value is treated as a &quot;directory&quot; entry.  The scanner lists the files in each one, and if a file ends in &quot;.jar&quot; or &quot;.zip&quot;, it's scanned.   <span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><p class="line862">To control the jars that are scanned, you need to set the values for those properties in the registry.  The registry properties can be controlled by calling <tt class="backtick">PyInterpreter.initialize(Properties&nbsp;preProperties,&nbsp;Properties&nbsp;postProperties,&nbsp;String[]&nbsp;argv)</tt> with your own <tt class="backtick">postProperties</tt> object before creating a <tt class="backtick">PythonInterpreter</tt>.  <tt class="backtick">preProperties</tt> is <tt class="backtick">System.getProperties()</tt> by default, so it's a good idea to pass that in as <tt class="backtick">preProperties</tt> here too.   <span class="anchor" id="line-14"></span><span class="anchor" id="line-15"></span><p class="line867">
+<h2 id="How_do_I_skip_scanning_jars">How do I skip scanning jars</h2>
+<span class="anchor" id="line-16"></span><span class="anchor" id="line-17"></span><p class="line862">If you only use full class imports, you can skip the package scanning altogether.  Set the system property <tt class="backtick">python.cachedir.skip</tt> to <tt class="backtick">true</tt> or(again) pass in your own <tt class="backtick">postProperties</tt> to turn it off. <span class="anchor" id="line-18"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">PackageScanning  (last edited 2009-11-12 05:06:28 by <span title="??? @ 122.49.210.50[122.49.210.50]">122</span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="PackageScanning.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/PackageScanning?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/PackageScanning?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="PackageScanning.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

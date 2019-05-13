@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>ConsoleChoices - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: ConsoleChoices" href="https://wiki.python.org/jython/ConsoleChoices?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=ConsoleChoices&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/ConsoleChoices?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/ConsoleChoices?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="ConsoleChoices.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/ConsoleChoices?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="ConsoleChoices.html">ConsoleChoices</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="ConsoleChoices.html">ConsoleChoices</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="ConsoleChoices.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/ConsoleChoices?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/ConsoleChoices?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="ConsoleChoices.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><p class="line867"><strong>Contents</strong> <div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="ConsoleChoices.html#The_Console">The Console</a><ol><li>
+<a href="ConsoleChoices.html#Choosing_a_Console_.28jython_command.29">Choosing a Console (jython command)</a></li><li>
+<a href="ConsoleChoices.html#Choosing_a_Console_.28embedded_interpreter.29">Choosing a Console (embedded interpreter)</a></li><li>
+<a href="ConsoleChoices.html#Properties_of_the_Available_Consoles">Properties of the Available Consoles</a><ol><li>
+<a href="ConsoleChoices.html#JLineConsole">JLineConsole</a></li><li>
+<a href="ConsoleChoices.html#ReadlineConsole">ReadlineConsole</a></li><li>
+<a href="ConsoleChoices.html#PlainConsole">PlainConsole</a></li></ol></li><li>
+<a href="ConsoleChoices.html#Notes_on_using_the_Consoles">Notes on using the Consoles</a><ol><li>
+<a href="ConsoleChoices.html#Linux">Linux</a></li><li>
+<a href="ConsoleChoices.html#Windows">Windows</a></li></ol></li></ol></li></ol></div> <span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><p class="line867">
+<h1 id="The_Console">The Console</h1>
+<span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><p class="line874">Left to itself, a Java program simply reads and writes characters at the console through JVM-provided streams. This plain behaviour may be augmented by the command window on your system with some line-editing capability (such as using the cursor keys to revisit a typo back up the line), or the ability to recall previously entered lines. On Unix-like systems it is common for a shell or console application to use a library that provides sophisticated editing and line recall, while the console itself provides little more than a line buffer with delete. On Windows, the command window provides basic editing and recall, from which applications benefit without further effort. <span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><p class="line862">In order to privide a common behaviour across platforms, the Jython interpreter (the one that gives you the Python <tt class="backtick">&gt;&gt;&gt;&nbsp;</tt> prompt) will access the console through a library called JLine, when it detects that the console is interactive. You may choose otherwise. <span class="anchor" id="line-9"></span><span class="anchor" id="line-10"></span><p class="line862">The choice of console affects interactions with the user through <tt class="backtick">sys,stdin</tt>, <tt class="backtick">sys.stdout</tt> and <tt class="backtick">raw_input()</tt>. <tt class="backtick">raw_input()</tt> always uses the other two streams to issue its prompt and read your response. The Python prompt <tt class="backtick">&gt;&gt;&gt;&nbsp;</tt> is issued through <tt class="backtick">raw_input()</tt>. <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line867">
+<h2 id="Choosing_a_Console_.28jython_command.29">Choosing a Console (jython command)</h2>
+<span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line862">The console is chosen by naming a class in the Jython setting <tt class="backtick">python.console</tt> (see <a href="https://wiki.python.org/jython/Settings">Settings</a>). The sources of this setting, in descending order of precedence are: <span class="anchor" id="line-15"></span><ol type="1"><li><p class="line862">Java System properties (including a command-line <tt class="backtick">-Dpython.console=</tt> option). <span class="anchor" id="line-16"></span></li><li>The Jython registry. <span class="anchor" id="line-17"></span></li><li><p class="line862">The default value <tt class="backtick">org.python.util.JLineConsole</tt> set by the jython program. <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span></li></ol><p class="line862">The default Jython registry makes no setting of <tt class="backtick">python.console</tt> so if you do not set <tt class="backtick">python.console</tt> on the command line you will get a JLineConsole. If you specify a class that cannot be found, or some other error occurs while loading and initialising the alleged console, you will get a non-fatal error and a PlainConsole. <span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><p class="line867">
+<h2 id="Choosing_a_Console_.28embedded_interpreter.29">Choosing a Console (embedded interpreter)</h2>
+<span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span><p class="line862">The console is chosen by naming a class in the Jython setting <tt class="backtick">python.console</tt> (see <a href="https://wiki.python.org/jython/Settings">Settings</a>). The sources of this setting, in descending order of precedence are: <span class="anchor" id="line-24"></span><ol type="1"><li>The Jython registry. <span class="anchor" id="line-25"></span></li><li><p class="line862">Java System properties (including a command-line <tt class="backtick">-Dpython.console=</tt> option). <span class="anchor" id="line-26"></span><span class="anchor" id="line-27"></span></li></ol><p class="line862">If <tt class="backtick">python.console</tt> remains undefined the console class is <tt class="backtick">org.python.core.PlainConsole</tt>. <span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><p class="line862">The default Jython registry makes no setting of <tt class="backtick">python.console</tt> so if you do not set <tt class="backtick">python.console</tt> on the command line you will get a PlainConsole. If you specify a class that cannot be found, or some other error occurs while loading and initialising the alleged console, you will get a non-fatal error and a PlainConsole. <span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><p class="line862">When using the embedded interpreter, PlainConsole is the recommended choice as installing the line-editing consoles will have a permanent and perhaps confusing effect on the application's use of the standard streams. If you use a line-diting console, do so by setting <tt class="backtick">python.console</tt> and getting the interpreter before taking any references to <tt class="backtick">System.in</tt> or <tt class="backtick">System.out</tt>. When using the JSR-223 script engine, the engine directs the interpreter to use its own streams, with which it wraps <tt class="backtick">System.in</tt> and <tt class="backtick">System.out</tt> before initialising Jython. The <a class="nonexistent" href="https://wiki.python.org/jython/ScriptEngine">ScriptEngine</a> does not then benefit from the installed console. <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><span class="anchor" id="line-34"></span><p class="line867">
+<h2 id="Properties_of_the_Available_Consoles">Properties of the Available Consoles</h2>
+<span class="anchor" id="line-35"></span><span class="anchor" id="line-36"></span><p class="line867">
+<h3 id="JLineConsole">JLineConsole</h3>
+<span class="anchor" id="line-37"></span><span class="anchor" id="line-38"></span><p class="line867"><strong>JLineConsole</strong> (<tt>-Dpython.console=org.python.util.JLineConsole</tt>) provides line-editing cross-platform. The behaviour of the system terminal is radically altered, and <tt class="backtick">System.in</tt> and <tt class="backtick">System.out</tt> are both replaced by spec<tt class="backtick"></tt>ialised objects. <tt class="backtick">sys.stdin</tt> and <tt class="backtick">sys.stdout</tt> wrap these objects instead of the original JVM ones. In the event of an uncontrolled exit of the JVM you may need to type blindly <tt>stty&nbsp;sane</tt> (Unix) to get a console that echoes correctly. <span class="anchor" id="line-39"></span><span class="anchor" id="line-40"></span><p class="line874">In version 2.7 of Jython, the JLine console has been tested to work with: <span class="anchor" id="line-41"></span><ul><li>Windows codepages 1252 and 1253 (therefore probably works with other single-byte encodings). It does not work with the UTF-8 codepage 65001. <span class="anchor" id="line-42"></span></li><li>Linux (Mint 14) Gnome terminal with locales en_GB.UTF-8, en_GB.iso88591, el_GR.iso88597 (therefore probably works with other single-byte encodings). <span class="anchor" id="line-43"></span><span class="anchor" id="line-44"></span></li></ul><p class="line867">
+<h3 id="ReadlineConsole">ReadlineConsole</h3>
+<span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span><p class="line867"><strong>ReadlineConsole</strong>: (<tt>-Dpython.console=org.python.util.ReadlineConsole</tt>) is an alternative (Unix) line-editing console that uses the library <tt class="backtick">libjavareadline</tt>. The behaviour of the system terminal is altered, and <tt class="backtick">System.in</tt> and <tt class="backtick">System.out</tt> are both replaced by spec<tt class="backtick"></tt>ialised objects. <tt class="backtick">sys.stdin</tt> and <tt class="backtick">sys.stdout</tt> wrap these objects instead of the original JVM ones. The readline console takes an extra setting <tt class="backtick">python.console.readlinelib</tt> with values of <tt class="backtick">GnuReadline</tt> or <tt class="backtick">Editline</tt>. <span class="anchor" id="line-47"></span><span class="anchor" id="line-48"></span><p class="line862">In version 2.7 of Jython, the Readline console has been tested using <tt class="backtick">-Dpython.console.readlinelib=GnuReadline</tt> to work with: <span class="anchor" id="line-49"></span><ul><li>Linux (Mint 14) Gnome terminal with locales en_GB.UTF-8, en_GB.iso88591, el_GR.iso88597 (therefore probably works with other single-byte encodings). <span class="anchor" id="line-50"></span></li></ul><p class="line862">The Readline console has been tested using <tt class="backtick">-Dpython.console.readlinelib=Editline</tt> to work with  <span class="anchor" id="line-51"></span><ul><li>Linux (Mint 14) Gnome terminal with locales en_GB.iso88591, el_GR.iso88597 (therefore probably works with other single-byte encodings). It does not recognise characters beyond US-ASCII when the locale is UTF-8. <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span></li></ul><p class="line867">
+<h3 id="PlainConsole">PlainConsole</h3>
+<span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><p class="line867"><strong>PlainConsole</strong>: (<tt>-Dpython.console=org.python.core.PlainConsole</tt> or simply <tt>-Dpython.console=&nbsp;</tt>) provides no (additional) line-editing. <tt class="backtick">System.in</tt>and <tt class="backtick">System.out</tt> are unmolested. <span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><p class="line867"><tt class="backtick">PlainConsole</tt> is inconvenient on Linux because there is no line recall or and not facility to correct typing mistakes other than to delete backwards to the error. It is acceptable on Windows since the system itself provides some line recall and editing. <span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><span class="anchor" id="line-60"></span><p class="line867">
+<h2 id="Notes_on_using_the_Consoles">Notes on using the Consoles</h2>
+<span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span><p class="line874">Encoding is a tricky subject. <span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span><p class="line867">
+<h3 id="Linux">Linux</h3>
+<span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span><p class="line862">This is based on Linux Mint 14 (a Ubuntu derivative), the <tt class="backtick">bash</tt> shell and Gnome Terminal. By default, the environment uses UTF-8 and you can expect the <tt class="backtick">JLineConsole</tt> and <tt class="backtick">ReadlineConsole</tt> (with <tt class="backtick">python.console.readlinelib=GnuReadline</tt>) to work. The <tt class="backtick">ReadlineConsole</tt> with <tt class="backtick">python.console.readlinelib=Editline</tt> appears only to accept US-ASCII. <span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><p class="line862">These notes do not cover how to type characters outside the US-ASCII set. You can install a range of keyboard mappings, and locales that support the encodings you need. This author uses the UK Extended WinKeys keyboard layout to access a range of accented characters and for these tests also installed a Greek keyboard layout and locale. <span class="anchor" id="line-69"></span><span class="anchor" id="line-70"></span><p class="line874">To obtain an environment with ISO-8859-1 encoding, launch as <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><pre><span class="anchor" id="line-1"></span>$ export LC_ALL=en_GB.iso88591
+<span class="anchor" id="line-2"></span>$ jython</pre><span class="anchor" id="line-75"></span><p class="line862">or <tt>en_US.iso88591</tt> if that's appropriate. You must set the encoding in the terminal window menu as well as through the shell environment. <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><p class="line862">The JVM should then pick up the encoding in use and configure the console object, and <tt class="backtick">sys.stdin</tt> and <tt class="backtick">sys.stdout</tt> to use it. To check this, use: <span class="anchor" id="line-78"></span><span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><pre><span class="anchor" id="line-1-1"></span>&gt;&gt;&gt; import sys
+<span class="anchor" id="line-2-1"></span>&gt;&gt;&gt; sys.stdin.encoding
+<span class="anchor" id="line-3"></span>'ISO-8859-1'</pre><span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><p class="line867">
+<h3 id="Windows">Windows</h3>
+<span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><p class="line862">This is based on Windows 7 command shell. When using the command window with non-ascii characters, in order to get characters represented correctly on screen, you must set a &quot;TrueType&quot; font (from the properties menu of the window). You can expect the <tt class="backtick">JLineConsole</tt> to work with any single-byte encoding, but it does not work with codepage 65001, the close approximation to UTF-8. The root of this problem is that Windows uses a different &quot;wide character&quot; API for this, while JLine only calls the byte-oriented one. <span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><p class="line874">These notes do not cover how to install support for alternate languages and keyboard mappings. This author uses the UK Extended keyboard layout to access a range of accented characters and for these tests also installed a Greek keyboard layout. <span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><p class="line862">To obtain an environment with ISO-8859-1 encoding, launch as <span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><pre><span class="anchor" id="line-1-2"></span>&gt; chcp 1252
+<span class="anchor" id="line-2-2"></span>&gt; jython</pre><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><p class="line862">(You may find cp1252 is your default.) The JVM should then pick up the encoding in use and configure the console object, and <tt class="backtick">sys.stdin</tt> and <tt class="backtick">sys.stdout</tt> to use it. To check this, use: <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><pre><span class="anchor" id="line-1-3"></span>&gt;&gt;&gt; import sys
+<span class="anchor" id="line-2-3"></span>&gt;&gt;&gt; sys.stdin.encoding
+<span class="anchor" id="line-3-1"></span>'Cp1252'</pre><span class="anchor" id="line-100"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">ConsoleChoices  (last edited 2014-06-15 07:23:09 by <span title="JeffAllen @ cpc4-stav16-2-0-cust181.aztw.cable.virginm.net[82.46.99.182]"><a class="nonexistent" href="https://wiki.python.org/jython/JeffAllen" title="JeffAllen @ cpc4-stav16-2-0-cust181.aztw.cable.virginm.net[82.46.99.182]">JeffAllen</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="ConsoleChoices.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/ConsoleChoices?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/ConsoleChoices?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="ConsoleChoices.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

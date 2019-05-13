@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>JythonDeveloperGuide - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: JythonDeveloperGuide" href="https://wiki.python.org/jython/JythonDeveloperGuide?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=JythonDeveloperGuide&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="JythonDeveloperGuide.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/JythonDeveloperGuide?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="JythonDeveloperGuide.html">JythonDeveloperGuide</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="JythonDeveloperGuide.html">JythonDeveloperGuide</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="JythonDeveloperGuide.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="JythonDeveloperGuide.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line874">This is an introduction to developing Jython, just to get someone started. It doesn't cover the source code in any depth or discuss the design behind Jython. It's purely aimed at getting a development environment set up. It's definitely not complete so feel free to make it better! <span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><p class="line867"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="JythonDeveloperGuide.html#Mercurial">Mercurial</a></li><li>
+<a href="JythonDeveloperGuide.html#GIT">GIT</a></li><li>
+<a href="JythonDeveloperGuide.html#IDE_Support">IDE Support</a></li><li>
+<a href="JythonDeveloperGuide.html#Ant">Ant</a></li><li>
+<a href="JythonDeveloperGuide.html#Tests">Tests</a></li><li>
+<a href="JythonDeveloperGuide.html#Directory_layout">Directory layout</a></li><li>
+<a href="JythonDeveloperGuide.html#Coding_guidance">Coding guidance</a></li><li>
+<a href="JythonDeveloperGuide.html#How_things_work">How things work</a></li><li>
+<a href="JythonDeveloperGuide.html#Other_stuff">Other stuff</a></li><li>
+<a href="JythonDeveloperGuide.html#Tasks">Tasks</a><ol><li>
+<a href="JythonDeveloperGuide.html#Porting_external_projects_to_Jython">Porting external projects to Jython</a></li></ol></li></ol></li></ol></div> <span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><p class="line867">
+<h2 id="Mercurial">Mercurial</h2>
+<span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><p class="line862">NOTE: The source code of Jython is now mirrored to <a class="http" href="http://github.com/jythontools/jython">Github</a>, <span class="anchor" id="line-9"></span>please see the next section &quot;GIT&quot; on how to contribute with pull requests. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><ul><li><p class="line862">Check out a copy of the Jython source with <a class="http" href="http://mercurial.selenic.com/">Mercurial</a>, available on most *nix systems or with Cygwin on Windows. <span class="anchor" id="line-12"></span></li><li><p class="line862">You can use the command line tool <tt class="backtick">hg</tt>, or <a class="http" href="http://mercurial.selenic.com/wiki/OtherTools#Graphical_user_interfaces">GUI clients are available</a> on most platforms. <span class="anchor" id="line-13"></span></li><li><p class="line891"><a class="nonexistent" href="https://wiki.python.org/jython/NetBeans">NetBeans</a>, Eclipse and other Java IDEs also integrate Mercurial support. Eclipse users should see <a href="https://wiki.python.org/jython/JythonDeveloperGuide/EclipseNotes">JythonDeveloperGuide/EclipseNotes</a>. <span class="anchor" id="line-14"></span></li><li><p class="line862">Browse the source code on the Web at <a class="http" href="http://hg.python.org/jython">http://hg.python.org/jython</a> or at the official mirror on <a class="nonexistent" href="https://wiki.python.org/jython/BitBucket">BitBucket</a>, at <a class="http" href="http://bitbucket.org/jython/jython">http://bitbucket.org/jython/jython</a>. <span class="anchor" id="line-15"></span></li><li><p class="line862">To obtain the a copy of the <em>current development</em> source, clone the repo via: <span class="anchor" id="line-16"></span><ul><li style="list-style-type:none"><span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><pre><span class="anchor" id="line-1"></span>hg clone http://hg.python.org/jython</pre><span class="anchor" id="line-20"></span><span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span></li></ul></li><li class="gap"><p class="line862">It's easy to create your own fork of the repo on <a class="nonexistent" href="https://wiki.python.org/jython/BitBucket">BitBucket</a>, visit <a class="http" href="http://bitbucket.org/jython/jython">http://bitbucket.org/jython/jython</a> and click on 'Fork' --- Please see the &quot;GIT&quot; section for our new GIT-based pull request process. <span class="anchor" id="line-23"></span></li><li><p class="line862">Attach patches to issues in the <a class="http" href="http://bugs.jython.org/">Jython bug tracker</a>. <span class="anchor" id="line-24"></span><ul><li><p class="line862">Also, you can upload them to <a class="http" href="http://codereview.appspot.com">http://codereview.appspot.com</a> (the Jython repository is already registered). <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></li></ul></li></ul><p class="line867">
+<h2 id="GIT">GIT</h2>
+<span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><ul><li><p class="line862">Jython's source code is mirrored to <a class="https" href="https://github.com/jythontools/jython">https://github.com/jythontools/jython</a> (a background sync runs every 5 minutes from hg.python.org) <span class="anchor" id="line-29"></span></li><li><p class="line862">You can use your <a class="http" href="http://git-scm.com/downloads/guis">favorite GIT client</a> to clone the GIT repo, on the command line: <span class="anchor" id="line-30"></span><ul><li style="list-style-type:none"><span class="anchor" id="line-31"></span><span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span><pre><span class="anchor" id="line-1-1"></span>git clone https://github.com/jythontools/jython.git</pre><span class="anchor" id="line-34"></span></li></ul></li><li>To submit patches, you should fork the github repo, create a special feature branch and submit a pull request on github. <span class="anchor" id="line-35"></span></li><li><p class="line862">The Jython developers will review and merge your pull request into the <a class="http" href="http://hg.python.org/jython">upstream Mercurial repo</a>. <span class="anchor" id="line-36"></span><span class="anchor" id="line-37"></span></li></ul><p class="line867">
+<h2 id="IDE_Support">IDE Support</h2>
+<span class="anchor" id="line-38"></span><span class="anchor" id="line-39"></span><p class="line874">Because Jython is an Ant project, it's a bit tricky to configure an Integrated Development Environment (IDE) for it. <span class="anchor" id="line-40"></span><span class="anchor" id="line-41"></span><p class="line874">These notes should help: <span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/EclipseNotes">JythonDeveloperGuide/EclipseNotes</a> <span class="anchor" id="line-44"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/IntellijNotes">JythonDeveloperGuide/IntellijNotes</a> <span class="anchor" id="line-45"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/IntellijTricks">JythonDeveloperGuide/IntellijTricks</a> <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span></li></ul><p class="line867">
+<h2 id="Ant">Ant</h2>
+<span class="anchor" id="line-48"></span><span class="anchor" id="line-49"></span><ul><li><p class="line891"><a class="http" href="http://ant.apache.org/">Ant</a> is a Java-based tool used to build Jython from source. <span class="anchor" id="line-50"></span></li><li><p class="line862">Eclipse users, see <a href="https://wiki.python.org/jython/JythonDeveloperGuide/EclipseNotes#ANT">Eclipse Ant notes</a> <span class="anchor" id="line-51"></span></li><li><p class="line862">Download the latest version (Jython requires Ant 1.7 or later to build) and install it so Ant's <tt class="backtick">bin</tt> directory is somewhere in your path. <span class="anchor" id="line-52"></span></li><li><p class="line862">To build Jython, run <tt class="backtick">ant</tt> in the top-level Jython directory (which contains the Ant file <tt class="backtick">build.xml</tt>). <span class="anchor" id="line-53"></span></li><li><p class="line862">The results of the build appear in the <tt class="backtick">dist</tt> subdirectory. <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span></li></ul><p class="line867">
+<h2 id="Tests">Tests</h2>
+<span class="anchor" id="line-57"></span><span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><p class="line862">The Jython build process generates an executable Bash script, <tt class="backtick">dist/bin/jython</tt>, to make it easy to launch your build of Jython. It works on Unix-like platforms (including Mac OS X and Cygwin). <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><span class="anchor" id="line-62"></span><p class="line862">If you're using Windows without Cygwin, use the batch file <tt class="backtick">dist/bin/jython.bat</tt> instead. <span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><p class="line874">Now you're ready to run tests... <span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><span class="anchor" id="line-68"></span><ul><li>There are a couple different places to find test cases <span class="anchor" id="line-69"></span><ul><li><p class="line862">Jython's <tt class="backtick">dist/Lib/test</tt> (populated by the build process) <span class="anchor" id="line-70"></span></li><li><p class="line862">Jython's <tt class="backtick">bugtests</tt> subdirectory (included with the development sources) <span class="anchor" id="line-71"></span><span class="anchor" id="line-72"></span></li></ul></li><li class="gap"><p class="line862">Run a particular test, or the whole Python test suite with <tt class="backtick">ant regrtest</tt>. <span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span><span class="anchor" id="line-75"></span></li></ul><p class="line862">See <a href="https://wiki.python.org/jython/TestingJython">TestingJython</a> for some more details. <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span><span class="anchor" id="line-78"></span><p class="line867">
+<h2 id="Directory_layout">Directory layout</h2>
+<span class="anchor" id="line-79"></span><span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span><p class="line874">Note the following describes the current trunk/jython. If you are working from an older tag, src doesn't exist and src/com and src/org are moved up a level. <span class="anchor" id="line-82"></span><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><ul><li><p class="line891"><tt class="backtick">src/org</tt> : top level package for python <span class="anchor" id="line-85"></span></li><li><p class="line891"><tt class="backtick">src/com</tt> : zxJDBC related sources <span class="anchor" id="line-86"></span></li><li><p class="line891"><tt class="backtick">src/shell</tt> : launcher scripts <span class="anchor" id="line-87"></span></li><li><p class="line891"><tt class="backtick">src/templates</tt>: java source generator &amp; related templates, used to update portions of java classes elsewhere in the source tree <span class="anchor" id="line-88"></span></li><li><p class="line891"><tt class="backtick">Demo</tt> : demo sources for the website and such <span class="anchor" id="line-89"></span></li><li><p class="line891"><tt class="backtick">Doc</tt> : the website documentation (see <a href="https://wiki.python.org/jython/JythonDeveloperGuide/WebsiteBuilderSetup">JythonDeveloperGuide/WebsiteBuilderSetup</a> to build the <a class="http" href="http://jython.org">http://jython.org</a> website) <span class="anchor" id="line-90"></span></li><li><p class="line891"><tt class="backtick">Lib</tt> : the python source files for Jython standard library implementations <span class="anchor" id="line-91"></span></li><li><p class="line891"><tt class="backtick">Lib/test</tt> : test cases <span class="anchor" id="line-92"></span></li><li><p class="line891"><tt class="backtick">Misc</tt> : random scripts which are not all used; some generate source <span class="anchor" id="line-93"></span></li><li><p class="line891"><tt class="backtick">Tools</tt> : JythonC and Freeze <span class="anchor" id="line-94"></span></li><li><p class="line891"><tt class="backtick">lib-python/&lt;version&gt;</tt> : Lib directory from the corresponding version of cpython <span class="anchor" id="line-95"></span></li><li><p class="line891"><tt class="backtick">bugtests</tt> : additional test cases covering bug reports <span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span></li></ul><p class="line867">
+<h2 id="Coding_guidance">Coding guidance</h2>
+<span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/PortingPythonModulesToJython">JythonDeveloperGuide/PortingPythonModulesToJython</a> : A good starting task for a Jython developer <span class="anchor" id="line-102"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/CodingStandards">CodingStandards</a> : The standards for writing Java code for Jython <span class="anchor" id="line-103"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/PatchGuidelines">PatchGuidelines</a> : How to make a patch for submission to the tracker <span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span></li></ul><p class="line867">
+<h2 id="How_things_work">How things work</h2>
+<span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/ImplementNewType">ImplementNewType</a> : Implementing a new type (a beginner's notes) <span class="anchor" id="line-110"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/ImplementSequenceType">ImplementSequenceType</a> : Implementing a new sequence type <span class="anchor" id="line-111"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonModulesInJava">JythonModulesInJava</a> : How to write a Jython module in Java <span class="anchor" id="line-112"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/PythonTypesInJava">PythonTypesInJava</a> : How to make a Jython type in Java (2.5 and later), mostly about the type exposer <span class="anchor" id="line-113"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonClassesInJava">JythonClassesInJava</a> : How to make a Jython class in Java (pre-2.2, deprecated) <span class="anchor" id="line-114"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/AttributeLookupMethods">JythonDeveloperGuide/AttributeLookupMethods</a> : Some explanation for the different methods to lookup attributes on <a class="nonexistent" href="https://wiki.python.org/jython/PyObject">PyObject</a>. <span class="anchor" id="line-115"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/ImplementingStrAndRepr">JythonDeveloperGuide/ImplementingStrAndRepr</a> : Tips for implementation of <tt class="backtick">__str__</tt> and <tt class="backtick">__unicode__</tt> in Java. <span class="anchor" id="line-116"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/IntegerConversion">IntegerConversion</a> : Basics of converting <a class="nonexistent" href="https://wiki.python.org/jython/PyObject">PyObject</a> numbers to Java primitives <span class="anchor" id="line-117"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/UsingPyNewStringFromPythonCode">JythonDeveloperGuide/UsingPyNewStringFromPythonCode</a> : On the corner case of converting a Java String to a Python String. <span class="anchor" id="line-118"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/GeneratedDerivedClasses">GeneratedDerivedClasses</a> : <tt>gderived.py</tt>, a tool used when implementing new types <span class="anchor" id="line-119"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/BufferProtocol">BufferProtocol</a> : Design of a Jython equivalent to the CPython buffer protocol (buffer API) <span class="anchor" id="line-120"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/MethodDispatch">MethodDispatch</a> : An explanation of Jython method dispatch mechanism. <span class="anchor" id="line-121"></span><span class="anchor" id="line-122"></span><span class="anchor" id="line-123"></span></li></ul><p class="line867">
+<h2 id="Other_stuff">Other stuff</h2>
+<span class="anchor" id="line-124"></span><span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/WebsiteBuilderSetup">WebsiteBuilderSetup</a> : How to get the pieces setup to edit and build the Jython website <span class="anchor" id="line-127"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/VersionTransition">VersionTransition</a> : Why some tests are excluded in going to a new version and how to go about fixing them <span class="anchor" id="line-128"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/RegressionTestNotes">JythonDeveloperGuide/RegressionTestNotes</a> : Some notes the regression tests <span class="anchor" id="line-129"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/JythonDeveloperGuide/PleaseAdoptMe">JythonDeveloperGuide/PleaseAdoptMe</a> : Tasks looking for volunteers <span class="anchor" id="line-130"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/HowToReleaseJython">HowToReleaseJython</a> : Checklist for building a release and updating the website <span class="anchor" id="line-131"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/SvnToHgMigration">SvnToHgMigration</a> : Notes on the migration to Mercurial <span class="anchor" id="line-132"></span><span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span></li></ul><p class="line867">
+<h2 id="Tasks">Tasks</h2>
+<span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><span class="anchor" id="line-137"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/PerformanceEnhancements">PerformanceEnhancements</a> : Ideas on how to speedup Jython <span class="anchor" id="line-138"></span></li><li><p class="line891"><a class="nonexistent" href="https://wiki.python.org/jython/CodebaseCleanup">CodebaseCleanup</a> : Tasks/general guidelines on keeping the codebase clean <span class="anchor" id="line-139"></span><span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span></li></ul><p class="line867">
+<h3 id="Porting_external_projects_to_Jython">Porting external projects to Jython</h3>
+<span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span><span class="anchor" id="line-144"></span><ul><li><p class="line891"><a href="https://wiki.python.org/jython/DjangoOnJython">DjangoOnJython</a> <span class="anchor" id="line-145"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/MercurialOnJython">MercurialOnJython</a> <span class="anchor" id="line-146"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/SqlAlchemyOnJython">SqlAlchemyOnJython</a> <span class="anchor" id="line-147"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/SetuptoolsOnJython">SetuptoolsOnJython</a> <span class="anchor" id="line-148"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/PylonsOnJython">PylonsOnJython</a> <span class="anchor" id="line-149"></span></li><li><p class="line891"><a href="https://wiki.python.org/jython/TwistedOnJython">TwistedOnJython</a> <span class="anchor" id="line-150"></span></li></ul><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">JythonDeveloperGuide  (last edited 2014-07-26 16:06:40 by <span title="HenningJacobs @ 217.9.109.195[217.9.109.195]"><a class="nonexistent" href="https://wiki.python.org/jython/HenningJacobs" title="HenningJacobs @ 217.9.109.195[217.9.109.195]">HenningJacobs</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="JythonDeveloperGuide.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/JythonDeveloperGuide?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="JythonDeveloperGuide.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

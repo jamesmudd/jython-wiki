@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>HelpOnMacros - JythonWiki</title>
+<script type="text/javascript" src="../wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="../wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="../wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="../wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="JythonWiki: HelpOnMacros" href="https://wiki.python.org/jython/HelpOnMacros?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=HelpOnMacros&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="FrontPage.html">
+<link rel="Alternate" title="Wiki Markup" href="https://wiki.python.org/jython/HelpOnMacros?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://wiki.python.org/jython/HelpOnMacros?action=print">
+<link rel="Search" href="FindPage.html">
+<link rel="Index" href="TitleIndex.html">
+<link rel="Glossary" href="WordIndex.html">
+<link rel="Help" href="HelpOnFormatting.html">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="HelpOnMacros.html">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="FrontPage.html"><img src="../wiki/europython/img/jython-new-small.gif" alt="JythonWiki">&nbsp;</a></div>
+<div id="username"><a href="https://wiki.python.org/jython/HelpOnMacros?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a href="HelpOnMacros.html">HelpOnMacros</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="FrontPage.html">FrontPage</a></li><li class="wikilink"><a href="RecentChanges.html">RecentChanges</a></li><li class="wikilink"><a href="FindPage.html">FindPage</a></li><li class="wikilink"><a href="HelpContents.html">HelpContents</a></li><li class="current"><a href="HelpOnMacros.html">HelpOnMacros</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="HelpOnMacros.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/HelpOnMacros?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/HelpOnMacros?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="HelpOnMacros.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><span class="anchor" id="line-8"></span><p class="line867"><table class="navigation"><tr><td><a href="https://wiki.python.org/jython/HelpOnMacros/EmbedObject">/EmbedObject</a> &nbsp; <a href="https://wiki.python.org/jython/HelpOnMacros/Include">/Include</a> &nbsp; <a href="https://wiki.python.org/jython/HelpOnMacros/MailTo">/MailTo</a> &nbsp; <a href="https://wiki.python.org/jython/HelpOnMacros/MonthCalendar">/MonthCalendar</a> &nbsp; </td></tr></table> <span class="anchor" id="line-9"></span>
+<h1 id="Macros">Macros</h1>
+<span class="anchor" id="line-10"></span><p class="line867"><div class="table-of-contents"><p class="table-of-contents-heading">Contents<ol><li>
+<a href="HelpOnMacros.html#Macros">Macros</a><ol><li>
+<a href="HelpOnMacros.html#Search_macros">Search macros</a></li><li>
+<a href="HelpOnMacros.html#Navigation_macros">Navigation macros</a></li><li>
+<a href="HelpOnMacros.html#System_Information_macros">System Information macros</a></li><li>
+<a href="HelpOnMacros.html#Others">Others</a></li></ol></li></ol></div> <span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line862">Macros allow the insertion of system features into normal wiki pages; the only thing that makes those pages special is that they contain macros. If you edit pages like <a href="RecentChanges.html">RecentChanges</a> or <a href="https://wiki.python.org/jython/SystemInfo">SystemInfo</a>, you'll see what that means. <span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><p class="line862">For more information on the possible markup, see <a href="https://wiki.python.org/jython/HelpOnEditing">HelpOnEditing</a> and <a href="https://wiki.python.org/jython/HelpOnMoinWikiSyntax">HelpOnMoinWikiSyntax</a>. <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span><p class="line867">
+<h2 id="Search_macros">Search macros</h2>
+<span class="anchor" id="line-17"></span><p class="line867"><a href="https://wiki.python.org/jython/MoinMoin">MoinMoin</a> now uses a new search engine, that lets your make sophisticated searches using both the interactive search box or any of the search macros. For more help, see <a href="HelpOnSearching.html">HelpOnSearching</a>. <span class="anchor" id="line-18"></span><span class="anchor" id="line-19"></span><div><table style="width: &amp;quot;100%&amp;quot"><tbody><tr style="background-color: &amp;quot;#ffffcc&amp;quot">  <td style="width: &amp;quot;33%&amp;quot"><p class="line862"> <strong>Macro</strong> </td>
+  <td><p class="line862"> <strong>Description</strong>  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-20"></span><p class="line891"><tt>&lt;&lt;AdvancedSearch&gt;&gt;</tt></td>
+  <td style="&amp;quot; margin: 10px;  vertical-align: top; &amp;quot; ; width: 75%"><p class="line862"> create an advanced search dialogue on the page. See <a href="FindPage.html">FindPage</a>. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-21"></span><p class="line891"><tt>&lt;&lt;TitleSearch&gt;&gt;</tt></td>
+  <td><p class="line862"> create a search box on the page, which search the page titles. See <a href="FindPage.html">FindPage</a>. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-22"></span><p class="line891"><tt>&lt;&lt;FullSearch&gt;&gt;</tt></td>
+  <td><p class="line862"> create a search box on the page, which search the page contents.See <a href="FindPage.html">FindPage</a>. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-23"></span><p class="line891"><tt>&lt;&lt;FullSearch()&gt;&gt;</tt></td>
+  <td><p class="line862"> print a list of pages whose content matches the current page title (like clicking on the page title). See <a href="https://wiki.python.org/jython/CategoryCategory">CategoryCategory</a> for example </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-24"></span><p class="line891"><tt>&lt;&lt;FullSearch(text[,&nbsp;highlight_titles={0|1},&nbsp;highlight_pages={0|1}])&gt;&gt;</tt></td>
+  <td><p class="line862"> print a list of pages whose content matches the search term. If <tt class="backtick">search_macro_parse_args</tt> configuration option is set, then <tt class="backtick">highlight_titles</tt> parameter gives ability to control highlighting of matches in page names showed in search results and <tt class="backtick">highlight_pages</tt> parameter controls whether links in these search results contain query parameter which turns highlighting of matches in page body. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-25"></span><p class="line891"><tt>&lt;&lt;FullSearchCached(text[,&nbsp;highlight_titles={0|1},&nbsp;highlight_pages={0|1}])&gt;&gt;</tt></td>
+  <td><p class="line862"> Works like the <tt>FullSearch</tt> macro but caches the results statically. Use it if you prefer speed over an up-to-date result. Behavior of <tt class="backtick">highlight_titles</tt> and <tt class="backtick">highlight_pages</tt> parameters is the same as in <tt class="backtick">FullSearch</tt> macro. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-26"></span><p class="line891"><tt>&lt;&lt;GoTo&gt;&gt;</tt></td>
+  <td><p class="line862"> directly go to the page you enter. See <a href="FindPage.html">FindPage</a>.  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-27"></span><p class="line891"><tt>&lt;&lt;PageList(Help[,&nbsp;highlight_titles={0|1}])&gt;&gt;</tt></td>
+  <td><p class="line862"> print a list of pages whose title matches the search term. See <a href="https://wiki.python.org/jython/HelpIndex">HelpIndex</a>. Behavior of <tt class="backtick">highlight_titles</tt> parameter is the same as in <tt class="backtick">FullSearch</tt> macro. </td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-28"></span><span class="anchor" id="line-29"></span><p class="line867">
+<h2 id="Navigation_macros">Navigation macros</h2>
+<span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><div><table style="width: &amp;quot;100%&amp;quot"><tbody><tr style="background-color: &amp;quot;#ffffcc&amp;quot">  <td style="width: &amp;quot;33%&amp;quot"><p class="line862"> <strong>Macro</strong> </td>
+  <td><p class="line862"> <strong>Description</strong>  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-32"></span><p class="line862"> <tt>&lt;&lt;RecentChanges&gt;&gt;</tt> </td>
+  <td><p class="line862"> a list of recently edited pages. See <a href="RecentChanges.html">RecentChanges</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-33"></span><p class="line862"> <tt>&lt;&lt;TitleIndex&gt;&gt;</tt> </td>
+  <td><p class="line862"> an index of all page titles. See <a href="TitleIndex.html">TitleIndex</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-34"></span><p class="line862"> <tt>&lt;&lt;WordIndex&gt;&gt;</tt> </td>
+  <td><p class="line862"> an index of all words in page titles. See <a href="WordIndex.html">WordIndex</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-35"></span><p class="line862"> <tt>&lt;&lt;WantedPages&gt;&gt;</tt> </td>
+  <td><p class="line862"> list links to non-existent pages. See <a href="WantedPages.html">WantedPages</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-36"></span><p class="line862"> <tt>&lt;&lt;OrphanedPages&gt;&gt;</tt> </td>
+  <td><p class="line862"> list pages no other page links to. See <a href="OrphanedPages.html">OrphanedPages</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-37"></span><p class="line862"> <tt>&lt;&lt;AbandonedPages&gt;&gt;</tt> </td>
+  <td><p class="line862"> list pages that were not edited for the longest time. See <a href="AbandonedPages.html">AbandonedPages</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-38"></span><p class="line862"> <tt>&lt;&lt;RandomPage&gt;&gt;</tt> </td>
+  <td><p class="line862"> inserts a link to a random page. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-39"></span><p class="line862"> <tt>&lt;&lt;RandomPage(#)&gt;&gt;</tt> </td>
+  <td><p class="line862"> links to a number of random pages. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-40"></span><p class="line862"> <tt>&lt;&lt;TableOfContents([maxdepth])&gt;&gt;</tt> </td>
+  <td><p class="line862"> display a local table of contents, possibly limited to a maximal depth. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-41"></span><p class="line862"> <tt>&lt;&lt;Anchor(anchorname)&gt;&gt;</tt> </td>
+  <td><p class="line862"> macro to insert anchors into a page. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-42"></span><p class="line862"> <tt>&lt;&lt;Navigation(children[,maxdepth])&gt;&gt;</tt> </td>
+  <td><p class="line862"> macro to list all of a pages' children. See start of this page for sample. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-43"></span><p class="line862"> <tt>&lt;&lt;Navigation(siblings[,maxdepth])&gt;&gt;</tt> </td>
+  <td><p class="line862"> quick navigation to siblings of a page. See <a href="https://wiki.python.org/jython/HelpOnMacros/MailTo">/MailTo</a> for sample. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-44"></span><p class="line862"> <tt>&lt;&lt;Navigation(slideshow)&gt;&gt;</tt> </td>
+  <td><p class="line862"> creates a link to toggle between slide show and wiki mode, and a link to start the slide show. See <a href="https://wiki.python.org/jython/HelpOnSlideShows">HelpOnSlideShows</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-45"></span><p class="line862"> <tt>&lt;&lt;Navigation(slides)&gt;&gt;</tt> </td>
+  <td><p class="line862"> displays first/prev/next/last links. See <a href="https://wiki.python.org/jython/HelpOnSlideShows">HelpOnSlideShows</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-46"></span><p class="line862"> <tt>&lt;&lt;AttachInfo&gt;&gt;</tt> </td>
+  <td><p class="line862">displays number of attachments for current page. See <a href="https://wiki.python.org/jython/HelpOnActions/AttachFile">HelpOnActions/AttachFile</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-47"></span><p class="line862"> <tt>&lt;&lt;AttachInfo(page)&gt;&gt;</tt> </td>
+  <td><p class="line862"> displays number of attachments for page. See <a href="https://wiki.python.org/jython/HelpOnActions/AttachFile">HelpOnActions/AttachFile</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-48"></span><p class="line862"> <tt>&lt;&lt;AttachList(pagename,mimetype)&gt;&gt;</tt> </td>
+  <td><p class="line862"> displays list of attachments. See <a href="https://wiki.python.org/jython/HelpOnActions/AttachFile">HelpOnActions/AttachFile</a> </td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-49"></span><span class="anchor" id="line-50"></span><p class="line867">
+<h2 id="System_Information_macros">System Information macros</h2>
+<span class="anchor" id="line-51"></span><span class="anchor" id="line-52"></span><div><table style="width: &amp;quot;100%&amp;quot"><tbody><tr style="background-color: &amp;quot;#ffffcc&amp;quot">  <td style="width: &amp;quot;33%&amp;quot"><p class="line862"> <strong>Macro</strong> </td>
+  <td><p class="line862"> <strong>Description</strong>  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-53"></span><p class="line891"><tt>&lt;&lt;Hits&gt;&gt;</tt></td>
+  <td><p class="line862"> a counter for page hits <tt>&lt;&lt;Hits([all=(False,True)][,event_type=(VIEWPAGE,SAVEPAGE)]&gt;&gt;</tt> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-54"></span><p class="line891"><tt>&lt;&lt;InterWiki&gt;&gt;</tt></td>
+  <td><p class="line862"> a list of all known <a href="https://wiki.python.org/jython/InterWiki">InterWiki</a> names.</td>
+</tr>
+<tr>  <td><span class="anchor" id="line-55"></span><p class="line891"><tt>&lt;&lt;SystemInfo&gt;&gt;</tt></td>
+  <td><p class="line862"> info on the wiki, the python interpreter and the host system. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-56"></span><p class="line891"><tt>&lt;&lt;PageCount(exists)&gt;&gt;</tt></td>
+  <td><p class="line862">current page count. If <tt>exists</tt> is supplied as an argument, only existing pages will be shown.  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-57"></span><p class="line891"><tt>&lt;&lt;PageSize&gt;&gt;</tt></td>
+  <td><p class="line862"> list the sizes of all pages. See <a href="PageSize.html">PageSize</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-58"></span><p class="line891"><tt>&lt;&lt;StatsChart(type)&gt;&gt;</tt></td>
+  <td><p class="line862"> shows statistical charts (currently defined types: hitcounts, pagesize, useragents, languages). See <a href="https://wiki.python.org/jython/EventStats">EventStats</a> and subpages </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-59"></span><p class="line891"><tt>&lt;&lt;SystemAdmin&gt;&gt;</tt></td>
+  <td><p class="line862"> Information for system administrators, see <a href="https://wiki.python.org/jython/SystemAdmin">SystemAdmin</a>. <em>You need to be superuser to use this macro.</em> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-60"></span><p class="line891"><tt>&lt;&lt;EditedSystemPages&gt;&gt;</tt></td>
+  <td><p class="line862"> A list of system pages that were modified. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-61"></span><p class="line891"><tt>&lt;&lt;WikiConfig&gt;&gt;</tt></td>
+  <td><p class="line862"> Shows wiki configuration settings which are either non-default or unknown. <em>You need to be superuser to use this macro.</em> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-62"></span><p class="line891"><tt>&lt;&lt;WikiConfigHelp&gt;&gt;</tt></td>
+  <td><p class="line862"> Shows all wiki configuration settings with descriptions. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-63"></span><p class="line891"><tt>&lt;&lt;HighlighterList&gt;&gt;</tt></td>
+  <td><p class="line862"> List available Pygments lexers. See <a class="interwiki" href="http://moinmo.in/MacroMarket/HighlighterList" title="MoinMoin">MacroMarket/HighlighterList</a> for additional information. </td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-64"></span><span class="anchor" id="line-65"></span><p class="line867">
+<h2 id="Others">Others</h2>
+<span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span><div><table style="width: &amp;quot;100%&amp;quot"><tbody><tr style="background-color: &amp;quot;#ffffcc&amp;quot">  <td style="width: &amp;quot;33%&amp;quot"><p class="line862"> <strong>Macro</strong></td>
+  <td><p class="line891"><strong>Description</strong> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-68"></span><p class="line891"><tt>&lt;&lt;Action(action&nbsp;[,text])&gt;&gt;</tt></td>
+  <td><p class="line862">links to page with valid action, optional text could be used as alias. (action names are case sensitive). Example: <tt class="backtick">&lt;&lt;Action(print,&nbsp;Print&nbsp;this&nbsp;page)&gt;&gt;</tt> will generate <a class="action" href="https://wiki.python.org/jython/HelpOnMacros?action=print">Print this page</a></td>
+</tr>
+<tr>  <td><span class="anchor" id="line-69"></span><p class="line891"><tt>&lt;&lt;Icon(image)&gt;&gt;</tt></td>
+  <td><p class="line862">display system icons.  See <a href="https://wiki.python.org/jython/HelpOnNavigation">HelpOnNavigation</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-70"></span><p class="line891"><tt>&lt;&lt;BR&gt;&gt;</tt></td>
+  <td><p class="line862"> insert a line break. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-71"></span><p class="line891"><tt>&lt;&lt;RandomQuote(pagename)&gt;&gt;</tt> </td>
+  <td><p class="line862"> Select a random quote from the given page, or from <tt>FortuneCookies</tt> if omitted. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-72"></span><p class="line891"><tt>&lt;&lt;Include(HelloWorld[,&quot;heading&quot;[,level]])&gt;&gt;</tt> </td>
+  <td><p class="line862"> include contents of another page. See <a href="https://wiki.python.org/jython/HelpOnMacros/Include">/Include</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-73"></span><p class="line891"><tt>&lt;&lt;FootNote(text)&gt;&gt;</tt></td>
+  <td><p class="line862"> Add a footnote<sup><a href="HelpOnMacros.html#fnref-20f25675be2608a0416555faab22516d2d9a84d2" id="fndef-20f25675be2608a0416555faab22516d2d9a84d2-0">1</a></sup>, or explicitly display collected footnotes when no args are given.  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-74"></span><p class="line891"><tt>&lt;&lt;Date(timestamp)&gt;&gt;</tt></td>
+  <td><p class="line862"> display a timestamp according to system settings, in the style of 2019-05-13 </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-75"></span><p class="line891"><tt>&lt;&lt;DateTime(timestamp)&gt;&gt;</tt></td>
+  <td><p class="line862"> display a timestamp<sup><a href="HelpOnMacros.html#fnref-4e2be9fcccab96fc091ee101f59fc48f969086bb" id="fndef-4e2be9fcccab96fc091ee101f59fc48f969086bb-1">2</a></sup> according to user settings, in the style of 2019-05-13 16:35:01 </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-76"></span><p class="line891"><tt>&lt;&lt;GetText(text)&gt;&gt;</tt></td>
+  <td><p class="line862"> <small>(mainly intended for use on Help pages)</small> Loads I18N texts. Example: &quot;Edit<tt class="backtick"></tt>Text&quot; is translated to &quot;EditText&quot; </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-77"></span><p class="line891"><tt>&lt;&lt;GetText2(,message,argument1,argument2,...)&gt;&gt;</tt></td>
+  <td><p class="line862"> <small>(mainly intended for use on Help pages or in generated output on wiki pages)</small> loads I18N texts and replaces <tt class="backtick">%s</tt> in the message by the arguments. The first character of the argument is used as the separator (in this example: a comma). You can escape the separator by using a backslash. Example: &quot;<tt class="backtick">&lt;&lt;GetText2(,[You&nbsp;may&nbsp;not&nbsp;read&nbsp;%s],FooBar)&gt;&gt;</tt>&quot; yields &quot;[You may not read FooBar]&quot;. For named placeholders, use &quot;key=value&quot; argument syntax, for example, &quot;<tt class="backtick">&lt;&lt;GetText2(,Upload&nbsp;new&nbsp;attachment&nbsp;\&quot;%(filename)s\&quot;,filename=file.txt)&gt;&gt;</tt>&quot; yields &quot;Upload new attachment &quot;file.txt&quot;&quot;. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-78"></span><p class="line891"><tt>&lt;&lt;TeudView&gt;&gt;</tt></td>
+  <td><p class="line862"> useful for intranet developer wikis, a means to view pydoc documentation, formatted via a XSLT stylesheet. See <a class="http" href="http://twistedmatrix.com/wiki/python/TeudProject">http://twistedmatrix.com/wiki/python/TeudProject</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-79"></span><p class="line891"><tt>&lt;&lt;MailTo(email)&gt;&gt;</tt></td>
+  <td><p class="line862"> protect your email address from spam bots. See <a href="https://wiki.python.org/jython/HelpOnMacros/MailTo">/MailTo</a> </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-80"></span><p class="line891"><tt>&lt;&lt;NewPage(PageTemplate,ButtonLabel,[ParentPage,@ME,@SELF]&nbsp;[,NameTemplate])&gt;&gt;</tt></td>
+  <td><p class="line862"> Allow the user to create (sub-)pages easily, using the page <tt>PageTemplate</tt> as the template for the new page and the string <tt>NameTemplate</tt> as a template for the name.<sup><a href="HelpOnMacros.html#fnref-381bfa3b6ca655a70a38ce8bea2d77e8ab6ca15c" id="fndef-381bfa3b6ca655a70a38ce8bea2d77e8ab6ca15c-2">3</a></sup> <tt class="backtick">@ME</tt> is used if you want the  page created below the users homepage. <tt class="backtick">@SELF</tt> is used to create a subpage below the page where it is called from. </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-81"></span><p class="line891"><tt>&lt;&lt;GetVal(NeatSnippets,regards)&gt;&gt;</tt></td>
+  <td><p class="line862"> Retrieve dictionary entries from dict pages. Example: If you have a page called <a class="nonexistent" href="https://wiki.python.org/jython/GermanDict">GermanDict</a> which contains the entry <em>Test</em>, you should see the translation here:  </td>
+</tr>
+<tr>  <td><span class="anchor" id="line-82"></span><p class="line891"><tt>&lt;&lt;MonthCalendar(,,12)&gt;&gt;</tt></td>
+  <td><p class="line862"> Displays a Calendar and creates link for entries to each day on subpages. See <a href="https://wiki.python.org/jython/HelpOnMacros/MonthCalendar">/MonthCalendar</a> </td>
+</tr>
+</tbody></table></div><span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><span class="anchor" id="line-85"></span><p class="line867"><div class="footnotes"><ol><li><p><a id="fnref-20f25675be2608a0416555faab22516d2d9a84d2"></a><span class="anchor" id="line-1-1"></span>the text cannot contain any wiki markup  (<a href="HelpOnMacros.html#fndef-20f25675be2608a0416555faab22516d2d9a84d2-0">1</a>)</li><li><p><a id="fnref-4e2be9fcccab96fc091ee101f59fc48f969086bb"></a><span class="anchor" id="line-1-2"></span>&quot;timestamp&quot; can be empty (current time), a number of seconds since 1970 (unix timestamp), or a W3C time specification (&quot;2002-01-23T12:34:56&quot;). See RFC822, sect. 5.   (<a href="HelpOnMacros.html#fndef-4e2be9fcccab96fc091ee101f59fc48f969086bb-1">2</a>)</li><li><p><a id="fnref-381bfa3b6ca655a70a38ce8bea2d77e8ab6ca15c"></a><span class="anchor" id="line-1-3"></span><tt class="backtick">NameTemplate</tt> is formatted with <tt class="backtick">time.strftime()</tt>, with the exception of <tt class="backtick">%s</tt> which is replaced by the input into the edit box (which is only shown if necessary). If <tt class="backtick">NameTemplate</tt> is not specified or empty, it defaults to <tt class="backtick">%s</tt>.  (<a href="HelpOnMacros.html#fndef-381bfa3b6ca655a70a38ce8bea2d77e8ab6ca15c-2">3</a>)</li></ol></div> <span class="anchor" id="line-86"></span><span class="anchor" id="bottom"></span></div>
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="HelpOnMacros.html#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="https://wiki.python.org/jython/HelpOnMacros?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="https://wiki.python.org/jython/HelpOnMacros?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="HelpOnMacros.html">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+
